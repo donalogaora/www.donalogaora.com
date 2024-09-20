@@ -1,4 +1,4 @@
-## Hi there 👋
+## This repository will be the furture for donalogaora.com hosted websites. For now you can use the info.donalogaora.com webpage for more upto date stuff.
 
 <!--
 **donalogaora/donalogaora** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
