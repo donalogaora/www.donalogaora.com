@@ -51,35 +51,3 @@ h6 {
   width: 70px; /* Adjust image size */
   height: auto;
   border-radius: 50%;
-
-/* Main Styles for the Nav */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    text-align: right; /* Aligns the items to the right */
-}
-
-li {
-    display: inline-block; /* Displays list items in a row */
-}
-
-li a {
-    display: block;
-    color: red; /* Text color */
-    text-align: center;
-    padding: 10px 20px; /* Padding */
-    text-decoration: none; /* No underline */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 5px 5px 10px red; /* Shadow effect */
-    background-color: white; /* Background color */
-    font-weight: bold; /* Bold text */
-    margin: 5px; /* Space between links */
-}
-
-li a:hover {
-    background-color: #111; /* Dark background on hover */
-    color: white; /* Change text color on hover */
-}
