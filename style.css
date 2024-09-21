@@ -37,10 +37,11 @@ h6 {
 /*Features*/
 .image-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: cener;
   align-items: center;
+  gap: 10px;
 }
 .image-row img {
-  width: 80px; /* Adjust image size */
+  width: 40px; /* Adjust image size */
   height: auto;
   border-radius: 50%;
