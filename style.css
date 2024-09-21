@@ -1,0 +1,46 @@
+/*Structure*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url(Assets/main_background.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+/*Text*/
+h1 {
+  color: white;
+  text-align: center;
+  font-family: "Impact", sans-serif;
+  font-size: 64px;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-family: "Arial Black", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+h6 {
+  color: white;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 10px;
+}
+
+/*Features*/
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image-row img {
+  width: 80px; /* Adjust image size */
+  height: auto;
+  border-radius: 50%;
