@@ -2,6 +2,8 @@
 html {
   height: 100%;
   width: 100%;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 body {
@@ -11,6 +13,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
+  padding: 0; /* Remove default padding */
   min-height: 100vh;
 }
 
@@ -47,7 +50,15 @@ h6 {
   align-items: center;
   gap: 10px;
 }
+
 .image-row img {
   width: 70px; /* Adjust image size */
   height: auto;
   border-radius: 50%;
+}
+  
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
