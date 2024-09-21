@@ -51,3 +51,35 @@ h6 {
   width: 70px; /* Adjust image size */
   height: auto;
   border-radius: 50%;
+
+/* Styles for the unordered list and links */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px red;
+    background-color: white;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+/* Add other styles for your site below */
