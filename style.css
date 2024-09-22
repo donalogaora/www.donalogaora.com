@@ -101,3 +101,7 @@ h6 {
 .designer {
   color: red;
 }
+
+.page-button {
+  background-color: #555555; /* Light gray */
+}
