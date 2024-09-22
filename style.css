@@ -1,8 +1,11 @@
-html {
+/* Base Styles */
+html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
 }
 
 body {
@@ -11,10 +14,6 @@ body {
   background-position: right top;
   background-attachment: fixed;
   background-size: cover;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -44,19 +43,20 @@ h6 {
 
 .image-row {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
-  justify-content: center; /* Center items */
-  align-items: center; /* Align items */
-  gap: 10px; /* Space between items */
-  max-width: 100%; /* Ensure it doesn't overflow */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
 }
 
 .image-row img {
-  width: 20%; /* Adjust this percentage as needed */
-  max-width: 70px; /* Set a max width */
-  height: auto; /* Keep aspect ratio */
+  width: 20%;
+  max-width: 70px;
+  height: auto;
+  border-radius: 15px; /* Rounded corners */
 }
-  
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -75,44 +75,44 @@ h6 {
   display: inline-block;
 }
 
-.bio-button {
-  background-color: white;
-  color: red;
-  font-weight: bold;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+.nav-link, .page-button {
   display: block;
-  margin: 20px auto;
+  color: red;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
   box-shadow: 5px 5px 10px red;
+  background-color: white;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.page-button {
+  background-color: #C0C0C0;
 }
 
 .designer {
   color: red;
 }
 
-.nav-link {
-  display: block;
-  color: red; /* Text color */
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px red;
-  background-color: white; /* White background for nav links */
-  font-weight: bold;
-  margin: 5px;
-}
-
-.page-button {
-  display: block;
-  color: red; /* Text color */
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px red;
-  background-color: #C0C0C0; /* Gray background for page button */
-  font-weight: bold;
-  margin: 5px;
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  .image-row img {
+    width: 40%;  /* Adjust for smaller screens */
+    max-width: 100px;
+    border-radius: 10px; /* Smaller border-radius for mobile */
+  }
+  
+  h1 {
+    font-size: 48px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  h6 {
+    font-size: 10px;
+  }
 }
