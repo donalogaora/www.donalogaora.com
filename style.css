@@ -6,6 +6,7 @@ html, body {
   padding: 0;
   font-family: Arial, sans-serif;
   min-height: 100vh;
+  text-align: center;
 }
 
 body {
@@ -101,6 +102,13 @@ h6 {
 
 .designer {
   color: red;
+}
+
+.link-container {
+  display: inline-block; /* Allow the link and cost to be inline */
+  text-align: left; /* Align text to the left within the container */
+  width: 300px; /* Set a fixed width for alignment */
+  margin: 0 auto; /* Center the container */
 }
 
 /* Responsive Design for Mobile */
