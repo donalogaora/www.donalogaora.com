@@ -44,6 +44,7 @@ h6 {
 
 .image-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -113,4 +114,10 @@ h6 {
   background-color: #C0C0C0; /* Gray background for page button */
   font-weight: bold;
   margin: 5px;
+}
+
+@media (max-width: 600px) {
+  .image-row img {
+    width: 20%; /* Adjust for smaller screens */
+  }
 }
