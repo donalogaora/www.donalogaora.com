@@ -73,19 +73,6 @@ h6 {
   display: inline-block;
 }
 
-.nav-link {
-  display: block;
-  color: red;
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px red;
-  background-color: white;
-  font-weight: bold;
-  margin: 5px;
-}
-
 .bio-button {
   background-color: white;
   color: red;
@@ -102,15 +89,28 @@ h6 {
   color: red;
 }
 
-.page-button {
+.nav-link {
   display: block;
-  color: red;
+  color: red; /* Text color */
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   box-shadow: 5px 5px 10px red;
-  background-color: #555555;
+  background-color: white; /* White background for nav links */
+  font-weight: bold;
+  margin: 5px;
+}
+
+.page-button {
+  display: block;
+  color: red; /* Text color */
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px red;
+  background-color: #555555; /* Gray background for page button */
   font-weight: bold;
   margin: 5px;
 }
