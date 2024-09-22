@@ -103,5 +103,14 @@ h6 {
 }
 
 .page-button {
-  background-color: #555555; /* Light gray */
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px red;
+  background-color: #555555;
+  font-weight: bold;
+  margin: 5px;
 }
