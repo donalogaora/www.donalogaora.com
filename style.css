@@ -108,6 +108,7 @@ h6 {
   text-align: left; /* Align text to the left within the container */
   width: 300px; /* Set a fixed width for alignment */
   margin: 0 auto; /* Center the container */
+  text-align: center;
 }
 
 /* Responsive Design for Mobile */
