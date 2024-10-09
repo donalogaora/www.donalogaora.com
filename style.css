@@ -95,6 +95,19 @@ h6 {
   margin: 5px;
 }
 
+.bio-button {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px red;
+  background-color: white;
+  font-weight: bold;
+  margin: 5px;
+}
+
 .page-button {
   background-color: #C0C0C0;
 }
