@@ -96,18 +96,25 @@ h6 {
 }
 
 .bio-button {
-  display: block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: "Arial Black", sans-serif;
   color: red;
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px red;
   background-color: white;
-  font-weight: bold;
-  margin: 5px;
-}
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  order-radius: 5px;
+  box-shadow: 5px 5px 10px red;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
+.bio-button:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 5px 5px 15px white;
+}
+  
 .page-button {
   background-color: #C0C0C0;
 }
