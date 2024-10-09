@@ -53,23 +53,23 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px; /* Adjust gap to reduce space between images on desktop */
   max-width: 100%;
 }
 
 .image-row img {
-  width: 15%; /* Increase width for larger screens */
-  max-width: 200px; /* Allow images to grow larger */
+  width: 20%; /* Increase width for larger screens */
+  max-width: 300px; /* Allow images to grow larger on desktop */
   height: auto;
-  border-radius: 100px; /* Rounded corners */
+  border-radius: 50%; /* Fully rounded corners */
 }
 
 /* Responsive Design for Tablets */
 @media screen and (max-width: 1024px) {
   .image-row img {
-    width: 20%;  /* Medium size for tablets */
-    max-width: 150px;
-    border-radius: 75px; /* Rounded corners */
+    width: 25%;  /* Medium size for tablets */
+    max-width: 180px;
+    border-radius: 50%; /* Ensure fully rounded corners */
   }
 }
 
@@ -123,9 +123,9 @@ h6 {
 /* Responsive Design for Mobile */
 @media screen and (max-width: 500px) {
   .image-row img {
-    width: 40%;  /* Adjust for smaller screens */
-    max-width: 120px; /* Increase max size on mobile */
-    border-radius: 60px; /* Smaller border-radius for mobile */
+    width: 50%;  /* Increase size for mobile */
+    max-width: 150px; /* Adjust max size for mobile */
+    border-radius: 50%; /* Fully rounded corners */
   }
   
   h1 {
