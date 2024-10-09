@@ -53,13 +53,13 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Adjust gap to reduce space between images on desktop */
+  gap: 15px; /* Reduced space between images */
   max-width: 100%;
 }
 
 .image-row img {
-  width: 20%; /* Increase width for larger screens */
-  max-width: 300px; /* Allow images to grow larger on desktop */
+  width: 25%; /* Increase width for larger screens */
+  max-width: 300px; /* Allow images to grow larger */
   height: auto;
   border-radius: 50%; /* Fully rounded corners */
 }
@@ -67,8 +67,8 @@ h6 {
 /* Responsive Design for Tablets */
 @media screen and (max-width: 1024px) {
   .image-row img {
-    width: 25%;  /* Medium size for tablets */
-    max-width: 180px;
+    width: 30%;  /* Medium size for tablets */
+    max-width: 200px;
     border-radius: 50%; /* Ensure fully rounded corners */
   }
 }
