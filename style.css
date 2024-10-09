@@ -58,10 +58,10 @@ h6 {
 }
 
 .image-row img {
-  width: 30%; /* Increase width for larger screens */
+  width: 40%; /* Increase width for larger screens */
   max-width: 150px; /* Allow images to grow larger */
   height: auto;
-  border-radius: 15px; /* Rounded corners */
+  border-radius: 75px; /* Rounded corners */
 }
 
 .clearfix::after {
