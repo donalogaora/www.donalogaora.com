@@ -69,6 +69,7 @@ h6 {
   .image-row img {
     width: 20%;  /* Medium size for tablets */
     max-width: 150px;
+    border-radius: 75px; /* Rounded corners */
   }
 }
 
