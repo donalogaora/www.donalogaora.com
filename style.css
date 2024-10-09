@@ -125,7 +125,7 @@ h6 {
 }
 
 /* Responsive Design for Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .image-row img {
     width: 40%;  /* Adjust for smaller screens */
     max-width: 100px;
