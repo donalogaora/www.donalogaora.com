@@ -61,7 +61,7 @@ h6 {
 
 .image-row img {
   width: 25%; /* Increase width for larger screens */
-  max-width: 300px; /* Allow images to grow larger */
+  max-width: 250px; /* Allow images to grow larger */
   height: auto;
   border-radius: 50%; /* Fully rounded corners */
   margin: 0; /* Remove any default margin */
@@ -71,7 +71,7 @@ h6 {
 @media screen and (max-width: 1024px) {
   .image-row img {
     width: 30%;  /* Medium size for tablets */
-    max-width: 200px;
+    max-width: 150px;
     border-radius: 50%; /* Ensure fully rounded corners */
   }
 }
@@ -80,7 +80,7 @@ h6 {
 @media screen and (max-width: 500px) {
   .image-row img {
     width: 50%;  /* Increase size for mobile */
-    max-width: 150px; /* Adjust max size for mobile */
+    max-width: 120px; /* Adjust max size for mobile */
     border-radius: 50%; /* Fully rounded corners */
   }
   
