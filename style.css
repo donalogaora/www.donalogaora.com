@@ -58,8 +58,8 @@ h6 {
 }
 
 .image-row img {
-  width: 20%;
-  max-width: 70px;
+  width: 30%; /* Increase width for larger screens */
+  max-width: 150px; /* Allow images to grow larger */
   height: auto;
   border-radius: 15px; /* Rounded corners */
 }
@@ -115,7 +115,7 @@ h6 {
 @media screen and (max-width: 500px) {
   .image-row img {
     width: 40%;  /* Adjust for smaller screens */
-    max-width: 100px;
+    max-width: 120px; /* Increase max size on mobile */
     border-radius: 10px; /* Smaller border-radius for mobile */
   }
   
