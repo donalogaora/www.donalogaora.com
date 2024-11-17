@@ -34,9 +34,6 @@ page-title, titles {
 page-title {
   font-family: "Impact", sans-serif; /* Bold font for main title */
   font-size: 64px; /* Large font size */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
-  position: relative; /* For adjusting position */
-  top: 20px; /* Adjusts vertical position from top */
 }
 
 /*h3*/
@@ -44,10 +41,6 @@ titles {
   font-family: "Arial Black", sans-serif; /* Bold font for subtitle */
   font-size: 24px; /* Slightly smaller size for subtitle */
   text-transform: uppercase; /* Uppercase subtitle */
-  margin-top: 20px; /* Space between title and subtitle */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for better visibility */
-  position: relative; /* For adjusting position */
-  top: 40px; /* Adjusts vertical position independently */
 }
 
 h6 {
