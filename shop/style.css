@@ -14,19 +14,12 @@ body {
   background-position: right top;
   background-attachment: fixed;
   background-size: cover;
+  display: flex; /* Enables flexbox */
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: start; /* Align content to the top */
 }
 
-.main-page-container {
-  display: flex;
-  flex-direction: column; /* Stack child elements vertically */
-  justify-content: center; /* Center elements vertically */
-  align-items: center; /* Center elements horizontally */
-  height: 100vh; /* Full height of the viewport */
-  text-align: center; /* Center text inside elements */
-  background: url('your-background-image.jpg') no-repeat center center; /* Background image */
-  background-size: cover; /* Ensures the image covers the container */
-  margin: 0; /* Reset margin */
-}
 
 /*custom elements*/
 page-title, titles {
@@ -39,18 +32,22 @@ page-title, titles {
 
 /*h1*/
 page-title {
-  font-family: "Impact", sans-serif;
-  font-size: 64px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for visibility */
+  font-family: "Impact", sans-serif; /* Bold font for main title */
+  font-size: 64px; /* Large font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+  position: relative; /* For adjusting position */
+  top: 20px; /* Adjusts vertical position from top */
 }
 
 /*h3*/
 titles {
-  font-family: "Arial Black", sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-top: 10px; /* Adds space if <titles> is below <page-title> */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Optional shadow for contrast */
+  font-family: "Arial Black", sans-serif; /* Bold font for subtitle */
+  font-size: 24px; /* Slightly smaller size for subtitle */
+  text-transform: uppercase; /* Uppercase subtitle */
+  margin-top: 20px; /* Space between title and subtitle */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for better visibility */
+  position: relative; /* For adjusting position */
+  top: 40px; /* Adjusts vertical position independently */
 }
 
 h6 {
