@@ -16,7 +16,8 @@ body {
   background-size: cover;
 }
 
-page-title { #h1
+/*h1*/
+page-title {
   color: white;
   text-align: center;
   font-family: "Impact", sans-serif;
