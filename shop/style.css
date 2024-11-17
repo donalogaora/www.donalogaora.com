@@ -1,1 +1,73 @@
+/* Base Styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
 
+body {
+  background-image: url(../assets/main_background.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: "Impact", sans-serif;
+  font-size: 64px;
+}
+
+h6 {
+  color: white;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.designer {
+  color: red;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  text-align: right;
+}
+
+.nav-list li {
+  display: inline-block;
+}
+
+.nav-link, .page-button {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px red;
+  background-color: white;
+  font-weight: bold;
+  margin: 5px;
+}
+  
+.page-button {
+  background-color: #C0C0C0;
+}
