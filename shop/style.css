@@ -16,7 +16,6 @@ body {
   background-size: cover;
   display: flex; /* Enables flexbox */
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
   justify-content: start; /* Align content to the top */
 }
 
@@ -27,6 +26,7 @@ page-title, titles {
   margin: 0 auto; /* Centers the elements */
   text-align: center; /* Centers the text inside */
   color: white; /* Sets the text color */
+  align-items: center; /* Center content horizontally */
 }
 
 
