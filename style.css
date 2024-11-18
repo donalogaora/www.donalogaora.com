@@ -16,6 +16,12 @@ body {
   background-size: cover;
 }
 
+/*custom elements*/
+page-title, titles {
+  display: block;
+  align-items: center; /* Center content horizontally */
+}
+
 /*h1*/
 page-title {
   color: white;
