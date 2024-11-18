@@ -16,14 +16,16 @@ body {
   background-size: cover;
 }
 
-h1 {
+/*h1*/
+page-title {
   color: white;
   text-align: center;
   font-family: "Impact", sans-serif;
   font-size: 64px;
 }
 
-h3 {
+/*h3*/
+titles {
   color: white;
   text-align: center;
   font-family: "Arial Black", sans-serif;
@@ -38,7 +40,8 @@ h4 {
   font-size: 12px;
 }
 
-h6 {
+/*h6*/
+tandcfooter {
   color: white;
   text-align: center;
   font-family: "Arial", sans-serif;
@@ -84,15 +87,15 @@ h6 {
     border-radius: 50%; /* Fully rounded corners */
   }
   
-  h1 {
+  page-title {
     font-size: 48px;
   }
   
-  h3 {
+  titles {
     font-size: 16px;
   }
   
-  h6 {
+  tandcfooter {
     font-size: 10px;
   }
 }
