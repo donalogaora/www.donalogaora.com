@@ -31,18 +31,23 @@ page-title, titles {
 
 /*h1*/
 page-title {
-  font-family: "Impact", sans-serif; /* Bold font for main title */
-  font-size: 64px; /* Large font size */
+  color: white;
+  text-align: center;
+  font-family: "Impact", sans-serif;
+  font-size: 64px;
 }
 
 /*h3*/
 titles {
-  font-family: "Arial Black", sans-serif; /* Bold font for subtitle */
-  font-size: 24px; /* Slightly smaller size for subtitle */
-  text-transform: uppercase; /* Uppercase subtitle */
+  color: white;
+  text-align: center;
+  font-family: "Arial Black", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
-h6 {
+/*h6*/
+tandcfooter {
   color: white;
   text-align: center;
   font-family: "Arial", sans-serif;
