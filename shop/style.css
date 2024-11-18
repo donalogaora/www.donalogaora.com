@@ -23,7 +23,6 @@ body {
 /*custom elements*/
 page-title, titles {
   display: block;
-  margin: 0 auto; /* Centers the elements */
   text-align: center; /* Centers the text inside */
   color: white; /* Sets the text color */
   align-items: center; /* Center content horizontally */
