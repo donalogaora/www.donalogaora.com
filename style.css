@@ -57,6 +57,18 @@ tandcfooter {
   width: 100%;
 }
 
+form {
+  text-align: center;
+  align-items: center;
+}
+
+label-shipping {
+  color: white;
+  text-align: center;
+  font-family: "Arial Black", sans-serif;
+  font-size: 12px;
+}
+
 .image-row {
   display: flex;
   flex-wrap: wrap;
