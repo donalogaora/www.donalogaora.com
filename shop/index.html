@@ -35,15 +35,15 @@
   <br>
   <br>
   <br>
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-    <input type="hidden" name="cmd" value="_s-xclick" />
-    <input type="hidden" name="hosted_button_id" value="63LAAYSADYK5Y" />
+  <form id="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_cart" />
+    <input type="hidden" name="business" value="CT92B4GM75LCA" />
+    <input type="hidden" name="currency_code" value="EUR" />
+    <input type="hidden" name="add" value="1" />
+    
     <table>
       <tr>
-        <td>
-          <input type="hidden" name="on0" value="3D Printed Phone Stand" />
-          3D Printed Phone Stand
-        </td>
+        <td>3D Printed Phone Stand</td>
       </tr>
       <tr>
         <td>
@@ -59,27 +59,40 @@
       </tr>
       <tr>
         <td>
-          <select name="os1">
-            <option value="Collect in Person">Collect in Person (0 EUR)</option>
-            <option value="Untracked">Untracked (4 EUR)</option>
-            <option value="Tracked">Tracked (9.5 EUR)</option>
+          <select id="shippingOption" name="shipping">
+            <option value="0">Collect in Person (0 EUR)</option>
+            <option value="4">Untracked (4 EUR)</option>
+            <option value="9.5">Tracked (9.5 EUR)</option>
           </select>
         </td>
       </tr>
     </table>
-    <input type="hidden" name="currency_code" value="EUR" />
-    <input type="hidden" name="shipping" value="0" /> <!-- Default to Collect in Person -->
-    <input type="hidden" name="shipping2_0" value="0" /> <!-- Collect in Person -->
-    <input type="hidden" name="shipping2_1" value="4" /> <!-- Untracked -->
-    <input type="hidden" name="shipping2_2" value="9.5" /> <!-- Tracked -->
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+    
+    <!-- Hidden fields for price -->
+    <input type="hidden" name="item_name" value="3D Printed Phone Stand" />
+    <input type="hidden" id="itemPrice" name="amount" value="10.00" /> <!-- Example base price -->
+    <input type="hidden" id="shippingCost" name="shipping" value="0" />
+    
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="Add to Cart" />
   </form>
+  
+  <script>
+    const shippingDropdown = document.getElementById('shippingOption');
+    const shippingCostField = document.getElementById('shippingCost');
+  
+    // Update shipping cost dynamically based on selection
+    shippingDropdown.addEventListener('change', () => {
+      shippingCostField.value = shippingDropdown.value;
+    });
+  </script>
+  
   <br><br><br>
+  
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-    <input type="hidden" name="cmd" value="_cart">
-    <input type="hidden" name="business" value="CT92B4GM75LCA">
-    <input type="hidden" name="display" value="1">
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <input type="hidden" name="cmd" value="_cart" />
+    <input type="hidden" name="business" value="CT92B4GM75LCA" />
+    <input type="hidden" name="display" value="1" />
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
   </form>
   <br>
   <br>
