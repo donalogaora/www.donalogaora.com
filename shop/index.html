@@ -59,7 +59,7 @@
       </tr>
       <tr>
         <td>
-          <select id="shippingOption" name="shipping">
+          <select id="shippingOption">
             <option value="0">Collect in Person (0 EUR)</option>
             <option value="4">Untracked (4 EUR)</option>
             <option value="9.5">Tracked (9.5 EUR)</option>
@@ -68,21 +68,30 @@
       </tr>
     </table>
     
-    <!-- Hidden fields for price -->
+    <!-- Hidden fields for PayPal -->
     <input type="hidden" name="item_name" value="3D Printed Phone Stand" />
-    <input type="hidden" id="itemPrice" name="amount" value="10.00" /> <!-- Example base price -->
-    <input type="hidden" id="shippingCost" name="shipping" value="0" />
+    <input type="hidden" id="itemPrice" value="10.00" /> <!-- Base price -->
+    <input type="hidden" id="shippingCost" value="0" /> <!-- Default shipping -->
+    <input type="hidden" id="totalPrice" name="amount" value="10.00" /> <!-- Total price sent to PayPal -->
     
     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="Add to Cart" />
   </form>
   
   <script>
     const shippingDropdown = document.getElementById('shippingOption');
+    const itemPriceField = document.getElementById('itemPrice');
     const shippingCostField = document.getElementById('shippingCost');
+    const totalPriceField = document.getElementById('totalPrice');
   
-    // Update shipping cost dynamically based on selection
+    // Update total price dynamically when shipping option changes
     shippingDropdown.addEventListener('change', () => {
-      shippingCostField.value = shippingDropdown.value;
+      const basePrice = parseFloat(itemPriceField.value); // Base product price
+      const shippingCost = parseFloat(shippingDropdown.value); // Selected shipping cost
+      const totalPrice = basePrice + shippingCost; // Calculate total price
+  
+      // Update hidden fields
+      shippingCostField.value = shippingCost.toFixed(2);
+      totalPriceField.value = totalPrice.toFixed(2);
     });
   </script>
   
@@ -94,6 +103,7 @@
     <input type="hidden" name="display" value="1" />
     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
   </form>
+
   <br>
   <br>
   <br>
