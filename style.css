@@ -57,12 +57,12 @@ tandcfooter {
   width: 100%;
 }
 
-form {
+paypal-form {
   text-align: center;
   align-items: center;
 }
 
-label-shipping {
+colour-table {
   color: white;
   text-align: center;
   font-family: "Arial Black", sans-serif;
