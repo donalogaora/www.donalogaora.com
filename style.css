@@ -237,9 +237,9 @@ colour-table {
     background-color: white;
     width: calc(25% - 20px);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     display: flex;
-    align-items: center;
+    align-items: stretch; /* Ensures child elements align to the height of the box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -249,9 +249,13 @@ colour-table {
 }
 
 .bp-photo {
-    width: 80px;
-    height: 80px;
-    margin-right: 20px;
+    position: relative;
+    width: 160px; /* Adjust this width to control how much of the image overlaps */
+    height: auto; /* Ensure the image maintains aspect ratio */
+    margin-left: -80px; /* Move the image left to center the box edge */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .bp-photo img {
