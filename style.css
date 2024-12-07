@@ -226,3 +226,34 @@ colour-table {
 
 /* Bio Page Stuff */
 
+
+/* Shop Stuff*/
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.color-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.color-circle:hover {
+    transform: scale(1.2);
+    border-color: #555;
+}
+
+.color-circle.selected {
+    border-color: #000;
+    outline: 3px solid #000;
+}
+
+.paypal-button-container {
+    margin-top: 20px;
+}
