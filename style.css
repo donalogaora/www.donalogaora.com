@@ -264,11 +264,11 @@ colour-table {
 }
 
 .circle {
-    width: 60px; /* Circle size */
-    height: 60px; /* Circle size */
+    width: 40px; /* Circle size */
+    height: 40px; /* Circle size */
     border-radius: 50%; /* Make it a circle */
     border: 5px solid #ccc; /* Grey ring around each circle */
-    margin: 0 15px; /* Half-circle width of space between circles */
+    margin: 0 10px; /* Half-circle width of space between circles */
 }
 
 .order-button {
