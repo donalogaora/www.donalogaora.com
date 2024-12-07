@@ -230,7 +230,7 @@ colour-table {
 /* Shop Stuff*/
 .shop-card {
     width: 500px; /* Fixed width */
-    height: 700px; /* Fixed height */
+    height: 500px; /* Fixed height */
     background-color: #ffffff; /* White background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
