@@ -241,7 +241,7 @@ colour-table {
     margin: 0 auto; /* Center the card horizontally */
 }
 
-.shop-card-image img {
+.shop-card-image {
     width: 100%; /* Image width adjusts to card width */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
@@ -279,6 +279,7 @@ colour-table {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 20px; /* Space above the button */
 }
 
 .order-button:hover {
