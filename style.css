@@ -229,11 +229,11 @@ colour-table {
 
 /* Shop Stuff*/
 .shop.card {
-    width: var(--shop.card-width, 300px);
-    aspect-ratio: var(--shop.card-aspect-ratio, 3 / 5);
-    background-color: var(--shop.card-bg-color, #ffffff);
-    border-radius: var(--shop.card-border-radius, 15px);
-    box-shadow: var(--shop.card-shadow, 0 4px 6px rgba(0, 0, 0, 0.1));
+    width: 300px; /* Set a fixed width */
+    aspect-ratio: 3 / 5; /* Maintain 3:5 aspect ratio */
+    background-color: #ffffff; /* White box */
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -248,10 +248,7 @@ colour-table {
 
 .shop.card-text {
     flex-grow: 1;
-    padding: var(--shop.card-padding, 15px);
+    padding: 15px;
     text-align: center;
-    color: var(--shop.text-color, #333);
+    color: #333;
 }
-
-
-
