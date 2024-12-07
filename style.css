@@ -228,7 +228,7 @@ colour-table {
 
 
 /* Shop Stuff*/
-.shop.card {
+.shop-card {
     width: 500px; /* Fixed width for the card */
     aspect-ratio: 3 / 5; /* Maintain 3:5 aspect ratio */
     background-color: #ffffff; /* White background */
@@ -239,13 +239,13 @@ colour-table {
     flex-direction: column;
 }
 
-.shop.card-image {
+.shop-card-image {
     width: 100%; /* Image width adjusts to card width */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
 }
 
-.shop.card-text {
+.shop-card-text {
     padding: 15px;
     text-align: center;
     color: #333;
