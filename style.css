@@ -225,50 +225,81 @@ colour-table {
 }
 
 /* Bio Page Stuff */
+/* Basic styles for icons and links */
 .social-icons ul {
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
 }
 
 .social-icons li {
-  position: relative;
+  margin: 10px 0;
 }
 
 .social-icons a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: #333;
-  color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  transition: background 0.3s ease;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  position: relative; /* Required for the tooltip */
 }
 
-.social-icons a:hover {
-  background: #0073b1; /* Change to the desired hover color */
-}
-
-.tooltip {
+/* Tooltip styles */
+.tooltip::before {
+  content: attr(data-tooltip);
   position: absolute;
-  bottom: -25px;
+  bottom: 125%; /* Position above the element */
   left: 50%;
   transform: translateX(-50%);
-  visibility: hidden;
-  opacity: 0;
-  background: #000;
+  background-color: #333;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 12px;
-  transition: opacity 0.3s ease;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
-.social-icons li:hover .tooltip {
-  visibility: visible;
+/* Add an arrow to the tooltip */
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 110%; /* Adjust arrow position */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover::before,
+.tooltip:hover::after {
   opacity: 1;
+  visibility: visible;
+}
+
+/* Platform-specific icon and text styling */
+.linkedin i {
+  color: #0e76a8;
+}
+.github i {
+  color: #333;
+}
+.instagram i {
+  color: #c13584;
+}
+.youtube i {
+  color: #ff0000;
+}
+
+/* Hover effect for links */
+.linkedin a:hover,
+.github a:hover,
+.instagram a:hover,
+.youtube a:hover {
+  color: #0073e6;
 }
