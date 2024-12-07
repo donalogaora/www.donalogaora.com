@@ -229,9 +229,8 @@ colour-table {
 
 /* Shop Stuff*/
 .shop-card {
-    width: 80%; /* Width is a percentage to fit on mobile */
-    max-width: 500px; /* Maximum width is 500px */
-    aspect-ratio: 3 / 7; /* Maintain 3:7 aspect ratio */
+    width: 500px; /* Fixed width */
+    height: 700px; /* Fixed height */
     background-color: #ffffff; /* White background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -243,8 +242,8 @@ colour-table {
 
 .shop-card-image {
     width: 100%; /* Image width adjusts to card width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover;
+    height: 40%; /* Image takes up 40% of the card height */
+    object-fit: fill; /* Stretch image to fit */
 }
 
 .shop-card-content {
@@ -253,22 +252,21 @@ colour-table {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    flex-grow: 1; /* Ensure content area takes available space */
+    height: 60%; /* Content takes up the remaining 60% of the card */
 }
 
 .circle-container {
     display: flex;
-    justify-content: space-between; /* Distribute the circles evenly */
+    justify-content: space-around; /* Space circles evenly */
     width: 100%; /* Ensure the container fills the width */
     margin-bottom: 20px;
 }
 
 .circle {
-    width: 40px; /* Circle size */
-    height: 40px; /* Circle size */
+    width: 50px; /* Fixed circle size */
+    height: 50px; /* Fixed circle size */
     border-radius: 50%; /* Make it a circle */
     border: 5px solid #ccc; /* Grey ring around each circle */
-    margin: 0 10px; /* Half-circle width of space between circles */
 }
 
 .order-button {
@@ -291,9 +289,10 @@ colour-table {
 @media (max-width: 600px) {
     .shop-card {
         width: 90%; /* Take up 90% width on mobile screens */
+        height: auto; /* Let height adjust naturally */
     }
     .circle {
-        width: 50px; /* Slightly smaller circles for mobile */
-        height: 50px;
+        width: 40px; /* Slightly smaller circles for mobile */
+        height: 40px;
     }
 }
