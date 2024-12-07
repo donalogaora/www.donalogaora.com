@@ -228,32 +228,30 @@ colour-table {
 
 
 /* Shop Stuff*/
-.color-options {
+.shop.card {
+    width: var(--shop.card-width, 300px);
+    aspect-ratio: var(--shop.card-aspect-ratio, 3 / 5);
+    background-color: var(--shop.card-bg-color, #ffffff);
+    border-radius: var(--shop.card-border-radius, 15px);
+    box-shadow: var(--shop.card-shadow, 0 4px 6px rgba(0, 0, 0, 0.1));
+    overflow: hidden;
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    flex-direction: column;
 }
 
-.color-circle {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    cursor: pointer;
-    transition: transform 0.2s, border-color 0.2s;
+.shop.card-image {
+    width: 100%;
+    height: auto;
+    flex-grow: 2;
+    object-fit: cover;
 }
 
-.color-circle:hover {
-    transform: scale(1.2);
-    border-color: #555;
+.shop.card-text {
+    flex-grow: 1;
+    padding: var(--shop.card-padding, 15px);
+    text-align: center;
+    color: var(--shop.text-color, #333);
 }
 
-.color-circle.selected {
-    border-color: #000;
-    outline: 3px solid #000;
-}
 
-.paypal-button-container {
-    margin-top: 20px;
-}
+
