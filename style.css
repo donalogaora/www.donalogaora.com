@@ -270,7 +270,7 @@ colour-table {
 }
 
 .order-button {
-    background-color: #4CAF50; /* Green button */
+    background-color: #FCBB32; /* Green button */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -282,7 +282,7 @@ colour-table {
 }
 
 .order-button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #0070BA; /* Darker green on hover */
 }
 
 /* Responsive adjustments for mobile screens */
