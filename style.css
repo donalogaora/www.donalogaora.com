@@ -227,63 +227,56 @@ colour-table {
 /* Bio Page Stuff */
 .bp-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 20px;
+    max-width: 900px; /* Prevent the layout from stretching too wide */
+    margin: 0 auto; /* Center the content */
 }
 
 .bp-box {
-    background-color: white;
-    width: calc(100% - 40px); /* Full width minus padding for smaller screens */
-    max-width: 400px; /* Prevents boxes from getting too large */
-    padding: 15px;
-    border-radius: 10px;
     display: flex;
-    align-items: stretch;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    margin: 0 auto; /* Centers boxes */
-}
-
-.bp-box:hover {
-    transform: translateY(-10px);
+    flex-direction: row;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for the boxes */
 }
 
 .bp-photo {
-    position: relative;
-    width: 80px; /* Reduces the image size */
-    height: 80px;
-    margin-right: 15px; /* Adds space between image and content */
+    flex: 0 0 70px; /* Fixed width for the image */
+    height: 70px;
+    margin-right: 20px;
     display: flex;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: 50%;
 }
 
 .bp-photo img {
-    height: 100%; /* Makes the image fill the box height */
-    width: auto; /* Maintains aspect ratio */
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .bp-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+    flex: 1;
 }
 
 .bp-title {
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
     color: #333;
 }
 
 .bp-link {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 10px;
     color: #007bff;
     text-decoration: none;
     font-size: 14px;
@@ -293,50 +286,38 @@ colour-table {
     text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .bp-box {
-        width: calc(90% - 20px); /* Slightly smaller boxes */
-        flex-direction: row; /* Maintains image on one side for tablets */
-    }
-
-    .bp-photo {
-        width: 60px; /* Scales down the image */
-        height: 60px;
-        margin-right: 10px;
-    }
-
+/* Responsive Adjustments */
+@media (min-width: 768px) {
     .bp-title {
-        font-size: 14px; /* Adjust text size for smaller screens */
+        font-size: 20px;
     }
 
     .bp-link {
-        font-size: 12px;
+        font-size: 16px;
+    }
+
+    .bp-photo {
+        flex: 0 0 100px; /* Larger photo on bigger screens */
+        height: 100px;
+    }
+
+    .bp-box {
+        flex-direction: row; /* Keep items in a row */
+        padding: 30px;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1200px) {
     .bp-box {
-        flex-direction: column; /* Stacks image and content */
-        width: 100%; /* Full width for small screens */
-        padding: 10px;
-    }
-
-    .bp-photo {
-        margin: 0 auto 10px auto; /* Centers the image */
-        width: 50px; /* Small image size */
-        height: 50px;
-    }
-
-    .bp-content {
-        text-align: center; /* Centers content for a better mobile view */
+        padding: 40px; /* Add more padding for larger screens */
+        max-width: 700px; /* Slightly increase box size */
     }
 
     .bp-title {
-        font-size: 14px;
+        font-size: 22px;
     }
 
     .bp-link {
-        font-size: 12px;
+        font-size: 18px;
     }
 }
