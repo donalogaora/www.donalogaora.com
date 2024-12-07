@@ -229,7 +229,8 @@ colour-table {
 
 /* Shop Stuff*/
 .shop-card {
-    width: 500px; /* Fixed width for the card */
+    width: 80%; /* Width is a percentage to fit on mobile */
+    max-width: 500px; /* Maximum width is 500px */
     aspect-ratio: 3 / 5; /* Maintain 3:5 aspect ratio */
     background-color: #ffffff; /* White background */
     border-radius: 15px; /* Rounded corners */
@@ -237,6 +238,7 @@ colour-table {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    margin: 0 auto; /* Center the card horizontally */
 }
 
 .shop-card-image {
@@ -249,4 +251,11 @@ colour-table {
     padding: 15px;
     text-align: center;
     color: #333;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+    .shop-card {
+        width: 90%; /* Take up 90% width on mobile screens */
+    }
 }
