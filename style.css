@@ -231,7 +231,7 @@ colour-table {
 .shop-card {
     width: 80%; /* Width is a percentage to fit on mobile */
     max-width: 500px; /* Maximum width is 500px */
-    aspect-ratio: 3 / 5; /* Maintain 3:5 aspect ratio */
+    aspect-ratio: 3 / 7; /* Maintain 3:7 aspect ratio */
     background-color: #ffffff; /* White background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
