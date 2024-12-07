@@ -257,19 +257,18 @@ colour-table {
 }
 
 .circle-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 circles per row */
-    grid-gap: 10px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Distribute the circles evenly */
     width: 100%; /* Ensure the container fills the width */
-    justify-items: center; /* Center the circles within the container */
+    margin-bottom: 20px;
 }
 
 .circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 60px; /* Circle size */
+    height: 60px; /* Circle size */
+    border-radius: 50%; /* Make it a circle */
     border: 5px solid #ccc; /* Grey ring around each circle */
+    margin: 0 15px; /* Half-circle width of space between circles */
 }
 
 .order-button {
@@ -285,7 +284,7 @@ colour-table {
 }
 
 .order-button:hover {
-    background-color: #888888; /* Darker green on hover */
+    background-color: #45a049; /* Darker green on hover */
 }
 
 /* Responsive adjustments for mobile screens */
