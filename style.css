@@ -253,13 +253,16 @@ colour-table {
     justify-content: center;
     align-items: center;
     padding: 15px;
+    flex-grow: 1; /* Ensure content area takes available space */
 }
 
 .circle-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 circles per row */
     grid-gap: 10px;
     margin-bottom: 20px;
+    width: 100%; /* Ensure the container fills the width */
+    justify-items: center; /* Center the circles within the container */
 }
 
 .circle {
@@ -267,7 +270,6 @@ colour-table {
     height: 60px;
     border-radius: 50%;
     border: 5px solid #ccc; /* Grey ring around each circle */
-    margin: auto;
 }
 
 .order-button {
@@ -283,12 +285,16 @@ colour-table {
 }
 
 .order-button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #888888; /* Darker green on hover */
 }
 
 /* Responsive adjustments for mobile screens */
 @media (max-width: 600px) {
     .shop-card {
         width: 90%; /* Take up 90% width on mobile screens */
+    }
+    .circle {
+        width: 50px; /* Slightly smaller circles for mobile */
+        height: 50px;
     }
 }
