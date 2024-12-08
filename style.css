@@ -230,7 +230,6 @@ colour-table {
 /* Shop Stuff*/
 .shop-card {
     width: 500px; /* Fixed width */
-    /*height: 700px; /* Fixed height */
     background-color: #ffffff; /* White background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -242,7 +241,7 @@ colour-table {
 
 .shop-card-image {
     width: 100%; /* Image width adjusts to card width */
-    height: 40%; /* Image takes up 40% of the card height */
+    height: 60%; /* Image takes up 40% of the card height */
     object-fit: fill; /* Stretch image to fit */
 }
 
@@ -252,7 +251,7 @@ colour-table {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    height: 60%; /* Content takes up the remaining 60% of the card */
+    height: 40%; /* Content takes up the remaining 60% of the card */
 }
 
 .circle-container {
