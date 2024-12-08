@@ -229,7 +229,7 @@ colour-table {
 
 /* Shop Stuff*/
 .shop-card {
-    width: 500px; /* Fixed width */
+    width: 420px; /* Fixed width */
     background-color: #ffffff; /* White background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -265,7 +265,7 @@ colour-table {
     width: 50px; /* Fixed circle size */
     height: 50px; /* Fixed circle size */
     border-radius: 50%; /* Make it a circle */
-    border: 5px solid #ccc; /* Grey ring around each circle */
+    border: 5px solid: red; /* Grey ring around each circle */
 }
 
 .order-button {
