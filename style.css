@@ -241,7 +241,7 @@ colour-table {
 
 .shop-card-image {
     width: 100%; /* Image width adjusts to card width */
-    height: 60%; /* Image takes up 40% of the card height */
+    height: 30%; /* Image takes up 40% of the card height */
     object-fit: fill; /* Stretch image to fit */
 }
 
@@ -251,7 +251,7 @@ colour-table {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    height: 40%; /* Content takes up the remaining 60% of the card */
+    height: 70%; /* Content takes up the remaining 60% of the card */
 }
 
 .circle-container {
