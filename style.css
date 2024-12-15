@@ -347,6 +347,10 @@ colour-table {
     text-decoration: none; /* Remove underline */
 }
 
+.t7c-links:visited {
+    color: red; /* Set visited links to red as well */
+}
+
 .t7c-links:hover {
     text-decoration: underline; /* Add underline on hover */
 }
