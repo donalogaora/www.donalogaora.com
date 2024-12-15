@@ -262,26 +262,23 @@ colour-table {
     margin-bottom: 20px;
 }
 
-/* Fix circle size */
 .circle {
-    width: 40px; /* Set width for the circles */
-    height: 40px; /* Set height for the circles */
-    border-radius: 50%; /* Make sure they are round */
-    border: 2px solid transparent;
-    transition: border-color 0.3s, transform 0.3s; /* Smooth transition for border color and scaling */
-    cursor: pointer;
+    width: 50px; /* Set the size of the circle */
+    height: 50px; /* Set the size of the circle */
+    border-radius: 50%; /* Make them circular */
+    border: 2px solid transparent; /* Border for unselected circles */
+    transition: border-color 0.3s; /* Smooth transition on hover/selection */
+    cursor: pointer; /* Make the cursor pointer when hovering */
 }
 
-/* On Hover: Change border color and increase size */
+/* On Hover */
 .circle:hover {
-    border-color: red;
-    transform: scale(1.1); /* Slightly enlarge on hover for better interaction */
+    border-color: red; /* Change border to red on hover */
 }
 
-/* On Selection: Highlight selected circle with border and make it larger */
+/* On Selection */
 .circle.selected {
     border-color: #FCBB32; /* Green border when selected */
-    transform: scale(1.2); /* Slightly increase size for selected circle */
 }
 
 .order-button {
