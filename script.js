@@ -17,17 +17,7 @@ setInterval(() => {
     }, 500); // Match the CSS transition duration
 }, 5000); // Change image every 5 seconds
 
-// Circle Hover
-const circles = document.querySelectorAll('.circle');
-
-circles.forEach((circle) => {
-    circle.addEventListener('click', () => {
-        circle.style.borderColor = 'green'; // Change the ring color to green
-    });
-});
-
-// Select Colour
-// Store the currently selected circle
+// Circle Hover and Selection Logic
 let selectedCircle = null;
 
 // Select all circles and the order button
@@ -58,4 +48,16 @@ orderButton.addEventListener('click', function() {
         // If no circle is selected, prompt the user to select one
         alert('Please select a color first!');
     }
+});
+
+// Circle Hover Effect
+circles.forEach((circle) => {
+    circle.addEventListener('mouseover', () => {
+        circle.style.borderColor = 'red'; // Change the ring color to red on hover
+    });
+    circle.addEventListener('mouseout', () => {
+        if (!circle.classList.contains('selected')) {
+            circle.style.borderColor = ''; // Reset border color when not selected
+        }
+    });
 });
