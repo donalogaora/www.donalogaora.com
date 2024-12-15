@@ -342,12 +342,12 @@ colour-table {
     color: #24252b; /* Color change on hover */
 }
 
-.t&c-links {
+.t7c-links {
     color: red; /* Set the link text color to red */
     text-decoration: none; /* Remove underline */
 }
 
-.t&c-links:hover {
+.t7c-links:hover {
     text-decoration: underline; /* Add underline on hover */
 }
 
