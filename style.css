@@ -267,6 +267,12 @@ colour-table {
     height: 50px; /* Fixed circle size */
     border-radius: 50%; /* Make it a circle */
     border: 2px solid #1C1F24; /* Grey ring around each circle */
+    transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.circle:hover {
+    border-color: red; /* Change the ring color to red on hover */
+    transform: scale(1.1); /* Slightly enlarge the circle */
 }
 
 .order-button {
