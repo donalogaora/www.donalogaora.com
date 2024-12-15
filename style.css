@@ -274,7 +274,7 @@ colour-table {
 
 .shop-money-tag {
     font-size: 20px; /* Adjusted size to 20px */
-    font-weight: bold; /* Bold text */
+    font-weight: bold !important; /* Force bold text */
     color: transparent; /* Transparent fill color */
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
     text-transform: uppercase; /* Uppercase text */
@@ -289,7 +289,7 @@ colour-table {
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bold !important; /* Force bold text */
 }
 
 .shop-order-button:hover {
