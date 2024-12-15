@@ -240,25 +240,10 @@ colour-table {
 }
 
 .shop-card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: fill; /* Keep the original object-fit */
-    position: absolute; /* Stack the images for transition */
-    top: 0;
-    left: 0;
-    opacity: 0; /* Default hidden */
-    transition: opacity 0.8s ease-in-out; /* Smooth fade effect */
-}
-
-.shop-image-wrapper {
-    width: 100%;
-    height: 30%; /* Maintain original proportions */
-    position: relative; /* Relative container for proper stacking */
-}
-
-.shop-card-image.visible {
-    opacity: 1; /* Show the active image */
-    z-index: 1; /* Ensure the active image is on top */
+    width: 100%; /* Adjust image to fit card width */
+    height: 30%; /* Adjust height */
+    object-fit: cover; /* Ensure proper scaling */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
 }
 
 .shop-card-content {
