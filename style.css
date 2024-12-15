@@ -270,7 +270,7 @@ colour-table {
     justify-content: space-between; /* Space out the price and button */
     align-items: center; /* Center the items vertically */
     width: 100%; /* Full width */
-    gap: 10px; /* Ensure there's a small gap between the price and button */
+    gap: 10px; /* Space between price and button */
 }
 
 .shop-money-tag {
@@ -279,6 +279,8 @@ colour-table {
     color: transparent; /* Transparent fill color */
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
     text-transform: uppercase; /* Uppercase text */
+    padding-right: 15px; /* Space between price and button */
+    display: inline-block; /* Ensures it behaves like an inline element next to the button */
 }
 
 .shop-order-button {
@@ -290,12 +292,12 @@ colour-table {
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
+    display: inline-block; /* Ensure the button aligns inline with the price */
 }
 
 .shop-order-button:hover {
     background-color: #5d5d5d; /* Button hover color */
 }
-
 
 .circle-container {
     display: flex;
