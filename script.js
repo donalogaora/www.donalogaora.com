@@ -31,6 +31,7 @@ const orderButton = document.getElementById('order-button');
 circles.forEach(circle => {
     circle.addEventListener('click', function() {
         console.log('Circle clicked!'); // Debugging line
+
         // Remove the "selected" class from all circles
         circles.forEach(c => c.classList.remove('selected'));
 
