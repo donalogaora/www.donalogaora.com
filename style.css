@@ -267,8 +267,8 @@ colour-table {
 
 .price-and-button {
     display: flex;
-    align-items: center; /* Vertically center items */
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: space-between; /* Space out the price and button */
+    align-items: center; /* Center the items vertically */
     width: 100%; /* Full width */
 }
 
@@ -284,7 +284,7 @@ colour-table {
 .order-button {
     padding: 10px 20px; /* Adjust button padding */
     background-color: #ffcc00; /* Button background color */
-    color: white; /* Button text color */
+    color: #253b80; /* Button text color */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded button corners */
     cursor: pointer;
