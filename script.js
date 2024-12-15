@@ -23,7 +23,7 @@ let selectedCircle = null;
 
 // Select all circles and the order button
 const circles = document.querySelectorAll('.circle');
-const orderButton = document.getElementById('order-button');
+const orderButton = document.getElementById('shop-order-button');  // Make sure the ID matches in HTML
 
 // Add click event listeners to the circles
 circles.forEach(circle => {
