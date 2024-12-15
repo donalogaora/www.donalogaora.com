@@ -267,10 +267,10 @@ colour-table {
 
 .shop-price-and-button {
     display: flex;
-    justify-content: flex-start; /* Align the items starting from the left */
-    align-items: center; /* Vertically center the items */
-    width: 100%; /* Full width */
-    gap: 10px; /* Adds space between the price and button */
+    justify-content: flex-start; /* Align to the left */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    gap: 15px; /* Control the space between the price and button */
 }
 
 .shop-money-tag {
@@ -279,6 +279,7 @@ colour-table {
     color: transparent; /* Transparent fill color */
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
     text-transform: uppercase; /* Uppercase text */
+    margin-right: 10px; /* Control spacing between price and button */
 }
 
 .shop-order-button {
