@@ -16,3 +16,12 @@ setInterval(() => {
         imageElement.style.opacity = 1; // Fade back in
     }, 500); // Match the CSS transition duration
 }, 5000); // Change image every 5 seconds
+
+// Circle Hover
+const circles = document.querySelectorAll('.circle');
+
+circles.forEach((circle) => {
+    circle.addEventListener('click', () => {
+        circle.style.borderColor = 'green'; // Change the ring color to green
+    });
+});
