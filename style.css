@@ -243,7 +243,7 @@ colour-table {
 .shop-card-title {
     font-size: 24px; /* Text size */
     font-weight: bold; /* Bold text */
-    color: transparent; /* Transparent fill color */
+    color: #6e6d68; /* Transparent fill color */
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
     text-align: center; /* Center the text horizontally */
     margin: 10px 0; /* Space around the title */
@@ -276,7 +276,7 @@ colour-table {
 .shop-money-tag {
     font-size: 20px; /* Adjusted size to 20px */
     font-weight: bold !important; /* Force bold text */
-    color: transparent; /* Transparent fill color */
+    color: #6e6d68; /* Transparent fill color */
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
     text-transform: uppercase; /* Uppercase text */
     margin-right: 10px; /* Control spacing between price and button */
