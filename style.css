@@ -270,6 +270,7 @@ colour-table {
     justify-content: space-between; /* Space out the price and button */
     align-items: center; /* Center the items vertically */
     width: 100%; /* Full width */
+    gap: 10px; /* Ensure there's a small gap between the price and button */
 }
 
 .shop-money-tag {
@@ -278,7 +279,6 @@ colour-table {
     color: transparent; /* Transparent fill color */
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
     text-transform: uppercase; /* Uppercase text */
-    padding-right: 15px; /* Space between price and button */
 }
 
 .shop-order-button {
