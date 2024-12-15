@@ -270,9 +270,9 @@ colour-table {
     transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
-.circle:hover {
+.circle.selected {
     border-color: red; /* Change the ring color to red on hover */
-    transform: scale(1.3); /* Slightly enlarge the circle */
+    transform: scale(1.5); /* Slightly enlarge the circle */
 }
 
 .order-button {
