@@ -319,6 +319,21 @@ colour-table {
     border-color: red; /* Change border to red on hover */
 }
 
+/* Style the T&C text */
+.shop-tc-text {
+    font-size: 20px; /* Adjusted size to 20px */
+    font-weight: bold; /* Bold text */
+    color: red; /* Transparent fill color */
+    text-transform: uppercase; /* Uppercase text */
+    text-decoration: underline; /* Add underline */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    padding-left: 10px; /* Space between "Order" and "T&C" */
+}
+
+.shop-tc-text:hover {
+    color: #24252b; /* Color change on hover */
+}
+
 /* On Selection */
 .circle.selected {
     border-color: #FCBB32; /* Green border when selected */
