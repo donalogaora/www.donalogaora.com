@@ -265,14 +265,14 @@ colour-table {
     height: 70%; /* Content takes up the remaining card height */
 }
 
-.price-and-button {
+.shop-price-and-button {
     display: flex;
     justify-content: space-between; /* Space out the price and button */
     align-items: center; /* Center the items vertically */
     width: 100%; /* Full width */
 }
 
-.money-tag {
+.shop-money-tag {
     font-size: 20px; /* Adjusted size to 20px */
     font-weight: bold; /* Bold text */
     color: transparent; /* Transparent fill color */
@@ -281,7 +281,7 @@ colour-table {
     padding-right: 15px; /* Space between price and button */
 }
 
-.order-button {
+.shop-order-button {
     padding: 10px 20px; /* Adjust button padding */
     background-color: #ffcc00; /* Button background color */
     color: #253b80; /* Button text color */
@@ -289,10 +289,10 @@ colour-table {
     border-radius: 5px; /* Rounded button corners */
     cursor: pointer;
     font-size: 16px;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
-.order-button:hover {
+.shop-order-button:hover {
     background-color: #5d5d5d; /* Button hover color */
 }
 
