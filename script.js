@@ -6,18 +6,16 @@ const images = ['../assets/white.png', '../assets/red.png'];
 let currentIndex = 0;
 
 setInterval(() => {
-    imageElement.style.transition = "opacity 0.5s";  // Ensure smooth transition
+    // Ensure smooth image fade transition without delay in circle highlighting
+    imageElement.style.transition = "opacity 0.5s"; 
     imageElement.style.opacity = 0;
 
+    // After fade-out, change the image source and fade back in
     setTimeout(() => {
         currentIndex = (currentIndex + 1) % images.length;
         imageElement.src = images[currentIndex];
-
-        // Wait a small time before fading back in
-        setTimeout(() => {
-            imageElement.style.opacity = 1;
-        }, 50);
-    }, 500);  // Fade-out duration
+        imageElement.style.opacity = 1;
+    }, 500);  // Wait 500ms to fade out image before switching
 }, 5000); // Change image every 5 seconds
 
 // Circle Hover and Selection Logic
@@ -32,10 +30,10 @@ circles.forEach(circle => {
     circle.addEventListener('click', function() {
         console.log('Circle clicked!'); // Debugging line
 
-        // Remove the "selected" class from all circles
+        // Remove the "selected" class from all circles immediately
         circles.forEach(c => c.classList.remove('selected'));
 
-        // Mark this circle as selected
+        // Mark this circle as selected immediately
         selectedCircle = this;
         this.classList.add('selected');
     });
