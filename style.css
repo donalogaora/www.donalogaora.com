@@ -16,14 +16,18 @@ body {
   background-size: cover;
 }
 
+/*custom elements*/
+page-title, titles {
+  display: block;
+  align-items: center; /* Center content horizontally */
+}
+
 /*h1*/
 page-title {
   color: white;
   text-align: center;
   font-family: "Impact", sans-serif;
   font-size: 64px;
-  display: block;
-  align-items: center; /* Center content horizontally */
 }
 
 /*h3*/
@@ -33,8 +37,6 @@ titles {
   font-family: "Arial Black", sans-serif;
   font-size: 24px;
   text-transform: uppercase;
-  display: block;
-  align-items: center; /* Center content horizontally */
 }
 
 h4 {
