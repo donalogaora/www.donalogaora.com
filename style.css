@@ -265,6 +265,37 @@ colour-table {
     height: 70%; /* Content takes up the remaining card height */
 }
 
+.price-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out the price and button */
+    width: 100%; /* Full width */
+}
+
+.money-tag {
+    font-size: 20px; /* Adjusted size to 20px */
+    font-weight: bold; /* Bold text */
+    color: transparent; /* Transparent fill color */
+    -webkit-text-stroke: 1px #24252b; /* Outline effect */
+    text-transform: uppercase; /* Uppercase text */
+    padding-right: 15px; /* Space between price and button */
+}
+
+.order-button {
+    padding: 10px 20px; /* Adjust button padding */
+    background-color: #24252b; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.order-button:hover {
+    background-color: #5d5d5d; /* Button hover color */
+}
+
 .circle-container {
     display: flex;
     justify-content: space-between; /* Space out the circles evenly */
@@ -289,37 +320,6 @@ colour-table {
 /* On Selection */
 .circle.selected {
     border-color: #FCBB32; /* Green border when selected */
-}
-
-.price-and-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space out the money tag and button */
-    width: 100%; /* Full width */
-}
-
-.money-tag {
-    color: white;
-    font-family: "Arial Black", sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    -webkit-text-stroke: 1px #24252b; /* Outline effect */
-    padding-right: 15px; /* Add spacing between price and button */
-}
-
-.order-button {
-    padding: 10px 20px; /* Adjust button padding */
-    background-color: #FCBB32; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded button corners */
-    cursor: pointer;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.order-button:hover {
-    background-color: #5d5d5d; /* Button hover color */
 }
 
 /* Responsive adjustments for mobile screens */
