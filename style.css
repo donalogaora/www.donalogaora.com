@@ -266,7 +266,7 @@ colour-table {
     width: 50px; /* Set the size of the circle */
     height: 50px; /* Set the size of the circle */
     border-radius: 50%; /* Make them circular */
-    border: 2px solid transparent; /* Border for unselected circles */
+    border: 2px solid #24252b; /* Border for unselected circles */
     transition: border-color 0.3s; /* Smooth transition on hover/selection */
     cursor: pointer; /* Make the cursor pointer when hovering */
 }
