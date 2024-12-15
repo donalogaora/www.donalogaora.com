@@ -240,14 +240,15 @@ colour-table {
 }
 
 .shop-card-image {
-    width: 100%; /* Image width adjusts to card width */
-    height: 30%; /* Image takes up 40% of the card height */
-    object-fit: fill; /* Stretch image to fit */
+    position: absolute; /* Overlap images */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure images fit the card width */
+    height: 100%; /* Ensure images fit the container height */
     object-fit: cover;
     transition: opacity 0.8s ease-in-out; /* Smooth fade effect */
     opacity: 0; /* Default hidden */
     z-index: 0; /* Base layer */
-}
 
 .shop-image-wrapper {
     position: relative; /* To overlap images */
