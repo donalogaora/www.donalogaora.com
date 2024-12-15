@@ -25,3 +25,35 @@ circles.forEach((circle) => {
         circle.style.borderColor = 'green'; // Change the ring color to green
     });
 });
+
+// Select Colour
+// Store the currently selected circle
+let selectedCircle = null;
+
+// Select all circles and the order button
+const circles = document.querySelectorAll('.circle');
+const orderButton = document.getElementById('order-button');
+
+// Add click event listeners to the circles
+circles.forEach(circle => {
+    circle.addEventListener('click', function() {
+        // Remove the "selected" class from all circles
+        circles.forEach(c => c.classList.remove('selected'));
+
+        // Mark this circle as selected
+        selectedCircle = this;
+        this.classList.add('selected');
+    });
+});
+
+// Add click event listener to the order button
+orderButton.addEventListener('click', function() {
+    if (selectedCircle) {
+        // If a circle is selected, navigate to its data-link
+        const link = selectedCircle.getAttribute('data-link');
+        window.location.href = link;
+    } else {
+        // If no circle is selected, prompt the user to select one
+        alert('Please select a color first!');
+    }
+});
