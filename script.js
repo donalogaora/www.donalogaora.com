@@ -37,6 +37,7 @@ const orderButton = document.getElementById('order-button');
 // Add click event listeners to the circles
 circles.forEach(circle => {
     circle.addEventListener('click', function() {
+        console.log('Circle clicked!'); // Debugging line
         // Remove the "selected" class from all circles
         circles.forEach(c => c.classList.remove('selected'));
 
@@ -51,6 +52,7 @@ orderButton.addEventListener('click', function() {
     if (selectedCircle) {
         // If a circle is selected, navigate to its data-link
         const link = selectedCircle.getAttribute('data-link');
+        console.log('Navigating to:', link); // Debugging line
         window.location.href = link;
     } else {
         // If no circle is selected, prompt the user to select one
