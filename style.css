@@ -243,6 +243,7 @@ colour-table {
     width: 100%; /* Image width adjusts to card width */
     height: 30%; /* Image takes up 40% of the card height */
     object-fit: fill; /* Stretch image to fit */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
 }
 
 .shop-card-content {
