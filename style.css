@@ -267,9 +267,10 @@ colour-table {
 
 .shop-price-and-button {
     display: flex;
+    justify-content: flex-start; /* Align the items starting from the left */
     align-items: center; /* Vertically center the items */
-    gap: 10px; /* Adds space between the price and button */
     width: 100%; /* Full width */
+    gap: 10px; /* Adds space between the price and button */
 }
 
 .shop-money-tag {
