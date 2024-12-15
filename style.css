@@ -330,12 +330,9 @@ colour-table {
 }
 
 .footer-tc-text {
-    font-size: 10px; /* Adjusted size to 20px */
-    font-weight: bold; /* Bold text */
     color: red; /* Transparent fill color */
     text-decoration: underline; /* Add underline */
     cursor: pointer; /* Pointer cursor to indicate it's clickable */
-    padding-left: 10px; /* Space between "Order" and "T&C" */
 }
 
 .shop-tc-text:hover {
