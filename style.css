@@ -243,7 +243,21 @@ colour-table {
     width: 100%; /* Image width adjusts to card width */
     height: 30%; /* Image takes up 40% of the card height */
     object-fit: fill; /* Stretch image to fit */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+    object-fit: cover;
+    transition: opacity 0.8s ease-in-out; /* Smooth fade effect */
+    opacity: 0; /* Default hidden */
+    z-index: 0; /* Base layer */
+}
+
+.shop-image-wrapper {
+    position: relative; /* To overlap images */
+    width: 100%;
+    height: 30%;
+}
+
+.shop-card-image.top-image {
+    opacity: 1; /* Initially visible image */
+    z-index: 1; /* Top layer */
 }
 
 .shop-card-content {
