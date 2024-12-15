@@ -263,21 +263,19 @@ colour-table {
 }
 
 .circle {
-    width: 50px; /* Fixed circle size */
-    height: 50px; /* Fixed circle size */
-    border-radius: 50%; /* Make it a circle */
-    border: 3px solid #1C1F24; /* Grey ring around each circle */
-    transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    cursor: pointer;
 }
 
+/* On Hover */
 .circle:hover {
-    border-color: red; /* Change border color */
-    background-color: rgba(255, 255, 255, 0.5); /* Optional: Add background color */
+    border-color: red; /* Change border to red on hover */
 }
 
+/* On Selection */
 .circle.selected {
-    border-color: #0070BA; /* Highlight selected circle */
-    transform: scale(1.5); /* Enlarge selected circle */
+    border-color: #FCBB32; /* Green border when selected */
 }
 
 .order-button {
