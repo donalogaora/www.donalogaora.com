@@ -257,9 +257,9 @@ colour-table {
 
 .circle-container {
     display: flex;
-    justify-content: space-around; /* Space circles evenly */
-    width: 100%; /* Ensure the container fills the width */
-    margin-bottom: 20px;
+    justify-content: space-between; /* Space out the circles evenly */
+    width: 100%; /* Make sure it takes the full width */
+    padding: 10px; /* Add some padding to prevent the circles from touching edges */
 }
 
 .circle {
