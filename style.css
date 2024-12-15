@@ -281,7 +281,7 @@ colour-table {
     width: 50px; /* Fixed circle size */
     height: 50px; /* Fixed circle size */
     border-radius: 50%; /* Make it a circle */
-    border: 5px solid #1C1F24; /* Grey ring around each circle */
+    border: 2px solid #1C1F24; /* Grey ring around each circle */
 }
 
 .order-button {
