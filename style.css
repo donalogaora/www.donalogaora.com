@@ -227,7 +227,7 @@ colour-table {
 /* Bio Page Stuff */
 
 
-/* Shop Stuff*/
+/* Shop Stuff */
 .shop-card {
     width: 420px; /* Fixed width */
     background-color: #ffffff; /* White background */
@@ -271,7 +271,8 @@ colour-table {
 }
 
 .circle:hover {
-    border-color: red; /* Change the ring color to red on hover */
+    border-color: red; /* Change border color */
+    background-color: rgba(255, 255, 255, 0.5); /* Optional: Add background color */
 }
 
 .circle.selected {
@@ -293,7 +294,7 @@ colour-table {
 
 .order-button:hover {
     background-color: #0070BA; /* Darker green on hover */
-}
+} 
 
 /* Responsive adjustments for mobile screens */
 @media (max-width: 600px) {
