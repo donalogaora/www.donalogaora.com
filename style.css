@@ -289,7 +289,7 @@ colour-table {
     border-radius: 5px; /* Rounded button corners */
     cursor: pointer;
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .order-button:hover {
