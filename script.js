@@ -1,18 +1,26 @@
 // Shop Stuff
 
 // Phone Stand Image Fade
-const imageElement = document.getElementById('toggle-image');
-const images = ['../assets/white.png', '../assets/red.png'];
+const images = [
+    { id: 'image-1', src: '../assets/white.png' },
+    { id: 'image-2', src: '../assets/red.png' }
+];
 let currentIndex = 0;
 
 setInterval(() => {
-    // Change opacity to create a fade effect
-    imageElement.style.opacity = 0;
+    // Current and next image elements
+    const currentImage = document.getElementById(images[currentIndex].id);
+    const nextIndex = (currentIndex + 1) % images.length;
+    const nextImage = document.getElementById(images[nextIndex].id);
 
-    // Wait for the fade-out to complete before changing the image
-    setTimeout(() => {
-        currentIndex = (currentIndex + 1) % images.length;
-        imageElement.src = images[currentIndex];
-        imageElement.style.opacity = 1; // Fade back in
-    }, 500); // Match the CSS transition duration
+    // Fade out the current image
+    currentImage.style.opacity = 0;
+    currentImage.style.zIndex = 0;
+
+    // Fade in the next image
+    nextImage.style.opacity = 1;
+    nextImage.style.zIndex = 1;
+
+    // Update index
+    currentIndex = nextIndex;
 }, 5000); // Change image every 5 seconds
