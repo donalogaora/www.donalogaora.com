@@ -15,7 +15,7 @@ setInterval(() => {
         currentIndex = (currentIndex + 1) % images.length;
         imageElement.src = images[currentIndex];
         imageElement.style.opacity = 1;
-    }, 50);  // Wait 50ms to fade out image before switching
+    }, 5);  // Wait 5ms to fade out image before switching (was org. 500ms)
 }, 2000); // Change image every 2 seconds
 
 // Circle Hover and Selection Logic
