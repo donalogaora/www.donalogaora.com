@@ -2,7 +2,7 @@
 
 // Phone Stand Image Fade
 const imageElement = document.getElementById('toggle-image');
-const images = ['../assets/white.png', '../assets/red.png'];
+const images = ['../assets/white.png', '../assets/red.png', '../assets/red_3d_printed_phone_stand_preview.png', '../assets/blue_3d_printed_phone_stand_preview.png'];
 let currentIndex = 0;
 
 setInterval(() => {
