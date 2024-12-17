@@ -2,7 +2,7 @@
 
 // Phone Stand Image Fade
 const imageElement = document.getElementById('toggle-image');
-const images = ['../assets/black_3d_printed_phone_stand_preview.png', '../assets/white_3d_printed_phone_stand_preview.png', '../assets/space_grey_3d_printed_phone_stand_preview.png', '../assets/blue_3d_printed_phone_stand_preview.png', '../assets/red_3d_printed_phone_stand_preview.png', '../assets/orange_3d_printed_phone_stand_preview.png'];
+const images = ['../assets/shop/black_3d_printed_phone_stand_preview.png', '../assets/shop/white_3d_printed_phone_stand_preview.png', '../assets/shop/space_grey_3d_printed_phone_stand_preview.png', '../assets/shop/blue_3d_printed_phone_stand_preview.png', '../assets/shop/red_3d_printed_phone_stand_preview.png', '../assets/shop/orange_3d_printed_phone_stand_preview.png'];
 let currentIndex = 0;
 
 setInterval(() => {
@@ -16,7 +16,7 @@ setInterval(() => {
         imageElement.src = images[currentIndex];
         imageElement.style.opacity = 1;
     }, 50);  // Wait 5ms to fade out image before switching (was org. 500ms)
-}, 2000); // Change image every 2 seconds
+}, 1500); // Change image every 1.5 seconds (was org. 5s)
 
 // Circle Hover and Selection Logic
 let selectedCircle = null;
