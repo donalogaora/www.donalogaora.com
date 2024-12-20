@@ -2,14 +2,21 @@
 
 // Phone Stand Image Fade
 const imageElement = document.getElementById('toggle-image');
-const images = ['../assets/shop/black_3d_printed_phone_stand_preview.png', '../assets/shop/white_3d_printed_phone_stand_preview.png', '../assets/shop/space_grey_3d_printed_phone_stand_preview.png', '../assets/shop/blue_3d_printed_phone_stand_preview.png', '../assets/shop/red_3d_printed_phone_stand_preview.png', '../assets/shop/orange_3d_printed_phone_stand_preview.png'];
+const images = [
+    '../assets/shop/black_3d_printed_phone_stand_preview.png',
+    '../assets/shop/white_3d_printed_phone_stand_preview.png',
+    '../assets/shop/space_grey_3d_printed_phone_stand_preview.png',
+    '../assets/shop/blue_3d_printed_phone_stand_preview.png',
+    '../assets/shop/red_3d_printed_phone_stand_preview.png',
+    '../assets/shop/orange_3d_printed_phone_stand_preview.png'
+];
 let currentIndex = 0;
 let carouselInterval; // Store the interval for the image carousel
 
 // Function to start the carousel
 function startCarousel() {
     carouselInterval = setInterval(() => {
-        imageElement.style.transition = "opacity 0.5s"; 
+        imageElement.style.transition = "opacity 0.5s";  // Smooth fade transition
         imageElement.style.opacity = 0;
 
         // After fade-out, change the image source and fade back in
@@ -17,7 +24,7 @@ function startCarousel() {
             currentIndex = (currentIndex + 1) % images.length;
             imageElement.src = images[currentIndex];
             imageElement.style.opacity = 1;
-        }, 50);  // Wait 5ms to fade out image before switching
+        }, 50);  // Wait 50ms to fade out image before switching
     }, 1500); // Change image every 1.5 seconds
 }
 
@@ -36,10 +43,11 @@ colorCircles.forEach(circle => {
         selectedColor = circle.getAttribute('data-color');
         
         // Update the image source based on the color selected
-        toggleImage.src = `/assets/shop/${selectedColor}_3d_printed_phone_stand_preview.png`; // Ensure these images exist (black, white, gray, blue, red, orange)
-
+        toggleImage.src = `/assets/shop/${selectedColor}_3d_printed_phone_stand_preview.png`;  // Static color image
+        
         // Stop the image carousel once a color is selected
-        clearInterval(carouselInterval); // Stop the carousel
+        clearInterval(carouselInterval);  // Stop the carousel
+        imageElement.style.opacity = 1;  // Ensure the image is fully visible immediately
     });
 });
 
