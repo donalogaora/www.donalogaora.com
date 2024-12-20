@@ -357,6 +357,25 @@ colour-table {
     border-color: #FCBB32; /* Green border when selected */
 }
 
+/* Custom styles for second white box */
+.shop-price-and-button_2 {
+    position: relative;
+}
+
+.shop_left-align-button {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.shop_right-align-text {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* Responsive adjustments for mobile screens */
 @media (max-width: 600px) {
     .shop-card {
