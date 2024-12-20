@@ -86,3 +86,15 @@ orderButton.addEventListener('click', function() {
     }
 });
 
+// Circle Hover Effect
+circles.forEach((circle) => {
+    circle.addEventListener('mouseover', () => {
+        // No effect here, simply remove the color change
+    });
+    circle.addEventListener('mouseout', () => {
+        if (!circle.classList.contains('selected')) {
+            circle.style.borderColor = ''; // Reset border color when not selected
+        }
+    });
+});
+
