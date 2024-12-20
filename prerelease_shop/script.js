@@ -21,19 +21,20 @@ setInterval(() => {
 // Select the image and the color circles
 const colorCircles = document.querySelectorAll('.circle');
 const toggleImage = document.getElementById('toggle-image');
+let selectedColor = ''; // Store the selected color
 
 // Loop through each color circle and add a click event listener
 colorCircles.forEach(circle => {
     circle.addEventListener('click', () => {
         // Get the data-color attribute value from the clicked circle
-        const color = circle.getAttribute('data-color');
+        selectedColor = circle.getAttribute('data-color');
         
         // Update the image source based on the color selected
-        toggleImage.src = `/assets/shop/${color}_3d_printed_phone_stand_preview.png`; // Ensure these images exist (black, white, gray, blue, red, orange)
-        
-        // Optionally, redirect to the link associated with the clicked color
-        const link = circle.getAttribute('data-link');
-        window.location.href = link; // This will redirect to the color's PayPal link
+        toggleImage.src = `/assets/shop/${selectedColor}_3d_printed_phone_stand_preview.png`; // Ensure these images exist (black, white, gray, blue, red, orange)
+
+        // Remove the "selected" class from all circles and mark this circle as selected
+        colorCircles.forEach(c => c.classList.remove('selected')); // Remove red border from all circles
+        circle.classList.add('selected'); // Add red border to the clicked circle
     });
 });
 
@@ -60,13 +61,13 @@ circles.forEach(circle => {
 
 // Add click event listener to the order button
 orderButton.addEventListener('click', function() {
-    if (selectedCircle) {
-        // If a circle is selected, navigate to its data-link
-        const link = selectedCircle.getAttribute('data-link');
+    if (selectedColor) {
+        // If a color is selected, navigate to its data-link
+        const link = document.querySelector(`.circle[data-color="${selectedColor}"]`).getAttribute('data-link');
         console.log('Navigating to:', link); // Debugging line
-        window.location.href = link;
+        window.location.href = link; // This will redirect to the color's PayPal link
     } else {
-        // If no circle is selected, prompt the user to select one
+        // If no color is selected, prompt the user to select one
         alert('Please select a color first!');
     }
 });
