@@ -86,14 +86,3 @@ orderButton.addEventListener('click', function() {
     }
 });
 
-// Circle Hover Effect
-circles.forEach((circle) => {
-    circle.addEventListener('mouseover', () => {
-        circle.style.borderColor = 'red'; // Change the ring color to red on hover
-    });
-    circle.addEventListener('mouseout', () => {
-        if (!circle.classList.contains('selected')) {
-            circle.style.borderColor = ''; // Reset border color when not selected
-        }
-    });
-});
