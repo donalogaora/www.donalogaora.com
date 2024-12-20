@@ -4,19 +4,26 @@
 const imageElement = document.getElementById('toggle-image');
 const images = ['../assets/shop/black_3d_printed_phone_stand_preview.png', '../assets/shop/white_3d_printed_phone_stand_preview.png', '../assets/shop/space_grey_3d_printed_phone_stand_preview.png', '../assets/shop/blue_3d_printed_phone_stand_preview.png', '../assets/shop/red_3d_printed_phone_stand_preview.png', '../assets/shop/orange_3d_printed_phone_stand_preview.png'];
 let currentIndex = 0;
+let carouselInterval; // Store the interval for stopping the image carousel
 
-setInterval(() => {
-    // Ensure smooth image fade transition without delay in circle highlighting
-    imageElement.style.transition = "opacity 0.5s"; 
-    imageElement.style.opacity = 0;
+// Function to start the carousel
+function startCarousel() {
+    carouselInterval = setInterval(() => {
+        // Ensure smooth image fade transition without delay in circle highlighting
+        imageElement.style.transition = "opacity 0.5s"; 
+        imageElement.style.opacity = 0;
 
-    // After fade-out, change the image source and fade back in
-    setTimeout(() => {
-        currentIndex = (currentIndex + 1) % images.length;
-        imageElement.src = images[currentIndex];
-        imageElement.style.opacity = 1;
-    }, 50);  // Wait 5ms to fade out image before switching (was org. 500ms)
-}, 1500); // Change image every 1.5 seconds (was org. 5s)
+        // After fade-out, change the image source and fade back in
+        setTimeout(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            imageElement.src = images[currentIndex];
+            imageElement.style.opacity = 1;
+        }, 50);  // Wait 5ms to fade out image before switching (was org. 500ms)
+    }, 1500); // Change image every 1.5 seconds
+}
+
+// Start the carousel initially
+startCarousel();
 
 // Select the image and the color circles
 const colorCircles = document.querySelectorAll('.circle');
@@ -35,6 +42,9 @@ colorCircles.forEach(circle => {
         // Remove the "selected" class from all circles and mark this circle as selected
         colorCircles.forEach(c => c.classList.remove('selected')); // Remove red border from all circles
         circle.classList.add('selected'); // Add red border to the clicked circle
+        
+        // Stop the image carousel once a color is selected
+        clearInterval(carouselInterval);
     });
 });
 
