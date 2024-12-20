@@ -9,7 +9,6 @@ let carouselInterval; // Store the interval for the image carousel
 // Function to start the carousel
 function startCarousel() {
     carouselInterval = setInterval(() => {
-        // Ensure smooth image fade transition
         imageElement.style.transition = "opacity 0.5s"; 
         imageElement.style.opacity = 0;
 
@@ -45,22 +44,16 @@ colorCircles.forEach(circle => {
 });
 
 // Circle Hover and Selection Logic
-let selectedCircle = null;
-
-// Select all circles and the order button
 const circles = document.querySelectorAll('.circle');
-const orderButton = document.getElementById('shop-order-button');  // Make sure the ID matches in HTML
+const orderButton = document.getElementById('shop-order-button');  // Ensure the ID matches in HTML
 
 // Add click event listeners to the circles
 circles.forEach(circle => {
     circle.addEventListener('click', function() {
-        console.log('Circle clicked!'); // Debugging line
-
         // Remove the "selected" class from all circles immediately
         circles.forEach(c => c.classList.remove('selected'));
 
         // Mark this circle as selected immediately
-        selectedCircle = this;
         this.classList.add('selected');
     });
 });
@@ -70,7 +63,6 @@ orderButton.addEventListener('click', function() {
     if (selectedColor) {
         // If a color is selected, navigate to its data-link
         const link = document.querySelector(`.circle[data-color="${selectedColor}"]`).getAttribute('data-link');
-        console.log('Navigating to:', link); // Debugging line
         window.location.href = link; // This will redirect to the color's PayPal link
     } else {
         // If no color is selected, prompt the user to select one
