@@ -92,7 +92,7 @@ const orderButton = document.getElementById('shop-order-button');
 orderButton.addEventListener('click', function() {
     if (selectedColor) {
         // Show a confirmation dialog to select delivery or in-person
-        const isDelivery = confirm("Do you want delivery? Click 'OK' for delivery, 'Cancel' for in-person.");
+        const isDelivery = confirm("Do you want posted delivery? Click 'OK' for posted delivery, 'Cancel' for in-person delivery.");
 
         // Determine the appropriate link based on the user's choice
         const link = isDelivery 
