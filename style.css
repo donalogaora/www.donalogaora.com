@@ -315,9 +315,9 @@ colour-table {
 }
 
 /* Remove the hover effect */
-.circle:hover {
+/*.circle:hover {
     border-color: inherit; /* No change in border color on hover */
-}
+/*}
 
 /* Style the T&C text */
 .shop-tc-text {
@@ -353,9 +353,9 @@ colour-table {
 }
 
 /* On Selection */
-.circle.selected {
+/*.circle.selected {
     border-color: #FCBB32; /* Green border when selected */
-}
+/*}
 
 /* Custom Orders */
 /* Updated Shop Card for Second Box */
