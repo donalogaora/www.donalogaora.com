@@ -48,6 +48,10 @@ colorCircles.forEach(circle => {
         // Stop the image carousel once a color is selected
         clearInterval(carouselInterval);  // Stop the carousel
         imageElement.style.opacity = 1;  // Ensure the image is fully visible immediately
+
+        // Update the selected circle styling
+        colorCircles.forEach(c => c.classList.remove('selected')); // Remove "selected" class from all circles
+        circle.classList.add('selected'); // Add "selected" class to the clicked circle
     });
 });
 
