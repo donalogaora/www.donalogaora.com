@@ -357,23 +357,125 @@ colour-table {
     border-color: #FCBB32; /* Green border when selected */
 }
 
-/* Custom styles for second white box */
-.shop-price-and-button_2 {
+/* Custom Orders */
+/* Updated Shop Card for Second Box */
+.shop-card_2 {
+    width: 420px; /* Fixed width */
+    background-color: #ffffff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto; /* Add spacing between cards */
     position: relative;
 }
 
-.shop_left-align-button {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+/* Shop Card Title for Second Box */
+.shop-card-title_2 {
+    font-size: 24px; /* Text size */
+    font-weight: bold; /* Bold text */
+    color: #6e6d68; /* Transparent fill color */
+    -webkit-text-stroke: 1px #24252b; /* Outline effect */
+    text-align: center; /* Center the text horizontally */
+    margin: 15px 0; /* Add more spacing around the title */
 }
 
-.shop_right-align-text {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+/* Shop Card Image for Second Box */
+.shop-card-image_2 {
+    width: 100%; /* Adjust image to fit card width */
+    height: auto; /* Automatically adjust height based on width */
+    object-fit: cover; /* Ensure proper scaling */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+/* Shop Card Content for Second Box */
+.shop-card-content_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add more padding for spacing */
+    height: auto; /* Adjust content height dynamically */
+}
+
+/* Price and Button Container for Second Box */
+.shop-price-and-button_2 {
+    display: flex;
+    justify-content: space-between; /* Align items to the ends */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Add padding for spacing */
+    gap: 15px; /* Add space between items */
+}
+
+/* Money Tag for Second Box */
+.shop-money-tag_2 {
+    font-size: 20px; /* Adjusted size to 20px */
+    font-weight: bold; /* Bold text */
+    color: #6e6d68; /* Transparent fill color */
+    -webkit-text-stroke: 1px #24252b; /* Outline effect */
+    text-transform: uppercase; /* Uppercase text */
+    margin-right: 10px; /* Add spacing between price and button */
+}
+
+/* Order Button for Second Box */
+.shop-order-button_2 {
+    padding: 10px 20px; /* Adjust button padding */
+    background-color: #ffcc00; /* Button background color */
+    color: #253b80; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold text */
+}
+
+.shop-order-button_2:hover {
+    background-color: #5d5d5d; /* Button hover color */
+}
+
+/* Circle Container for Second Box */
+.circle-container_2 {
+    display: flex;
+    justify-content: space-evenly; /* Space out the circles evenly */
+    width: 100%; /* Full width of container */
+    padding: 10px; /* Add padding */
+}
+
+/* Circles for Second Box */
+.circle_2 {
+    width: 50px; /* Set the size of the circle */
+    height: 50px; /* Set the size of the circle */
+    border-radius: 50%; /* Make them circular */
+    border: 2px solid #24252b; /* Border for unselected circles */
+    transition: border-color 0.3s; /* Smooth transition on hover/selection */
+    cursor: pointer; /* Make the cursor pointer on hover */
+}
+
+/* Hover Effect for Circles in Second Box */
+.circle_2:hover {
+    border-color: red; /* Change border to red on hover */
+}
+
+/* Selected State for Circles in Second Box */
+.circle_2.selected {
+    border-color: #FCBB32; /* Green border when selected */
+}
+
+/* T&C Text for Second Box */
+.shop-tc-text_2 {
+    font-size: 18px; /* Slightly smaller size */
+    font-weight: bold; /* Bold text */
+    color: red; /* Transparent fill color */
+    text-decoration: underline; /* Add underline */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    padding-left: 10px; /* Add space between elements */
+}
+
+.shop-tc-text_2:hover {
+    color: #24252b; /* Change color on hover */
 }
 
 /* Responsive adjustments for mobile screens */
