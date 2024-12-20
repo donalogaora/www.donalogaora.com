@@ -2,6 +2,37 @@
 
 // Phone Stand Image Fade
 const imageElement = document.getElementById('toggle-image');
+const images = [
+    '../assets/shop/black_3d_printed_phone_stand_preview.png',
+    '../assets/shop/white_3d_printed_phone_stand_preview.png',
+    '../assets/shop/space_grey_3d_printed_phone_stand_preview.png',
+    '../assets/shop/blue_3d_printed_phone_stand_preview.png',
+    '../assets/shop/red_3d_printed_phone_stand_preview.png',
+    '../assets/shop/orange_3d_printed_phone_stand_preview.png'
+];
+let currentIndex = 0;
+let carouselInterval; // Store the interval for the image carousel
+let isCarouselActive = true; // Track if the carousel is active
+
+// Function to start the carousel
+function startCarousel() {
+    if (isCarouselActive) {
+        carouselInterval = setInterval(() => {
+            imageElement.style.transition = "opacity 0.5s";  // Smooth fade transition
+            imageElement.style.opacity = 0;
+
+            // After fade-out, change the image source and fade back in
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                imageElement.src = images[currentIndex];
+                imageElement.style.opacity = 1;
+            }, 50);  // Wait 50ms to fade out image before switching
+        }, 1500); // Change image every 1.5 seconds
+    }
+}
+
+// Start the carousel initially
+startCarousel();
 
 // Select the image and the color circles
 const colorCircles = document.querySelectorAll('.circle');
@@ -16,6 +47,11 @@ colorCircles.forEach(circle => {
         
         // Update the image source based on the color selected
         toggleImage.src = `/assets/shop/${selectedColor}_3d_printed_phone_stand_preview.png`;  // Static color image
+        
+        // Stop the image carousel once a color is selected
+        clearInterval(carouselInterval);  // Stop the carousel
+        isCarouselActive = false; // Set carousel as inactive
+        imageElement.style.opacity = 1;  // Ensure the image is fully visible immediately
 
         // Update the selected circle styling
         colorCircles.forEach(c => c.classList.remove('selected')); // Remove "selected" class from all circles
