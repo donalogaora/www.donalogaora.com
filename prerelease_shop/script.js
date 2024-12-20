@@ -59,22 +59,8 @@ colorCircles.forEach(circle => {
     });
 });
 
-// Circle Hover and Selection Logic
-const circles = document.querySelectorAll('.circle');
-const orderButton = document.getElementById('shop-order-button');  // Ensure the ID matches in HTML
-
-// Add click event listeners to the circles
-circles.forEach(circle => {
-    circle.addEventListener('click', function() {
-        // Remove the "selected" class from all circles immediately
-        circles.forEach(c => c.classList.remove('selected'));
-
-        // Mark this circle as selected immediately
-        this.classList.add('selected');
-    });
-});
-
 // Add click event listener to the order button
+const orderButton = document.getElementById('shop-order-button');
 orderButton.addEventListener('click', function() {
     if (selectedColor) {
         // If a color is selected, navigate to its data-link
@@ -85,16 +71,3 @@ orderButton.addEventListener('click', function() {
         alert('Please select a color first!');
     }
 });
-
-// Circle Hover Effect
-circles.forEach((circle) => {
-    circle.addEventListener('mouseover', () => {
-        // No effect here, simply remove the color change
-    });
-    circle.addEventListener('mouseout', () => {
-        if (!circle.classList.contains('selected')) {
-            circle.style.borderColor = ''; // Reset border color when not selected
-        }
-    });
-});
-
