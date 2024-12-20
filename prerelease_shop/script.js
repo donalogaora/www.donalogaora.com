@@ -12,20 +12,23 @@ const images = [
 ];
 let currentIndex = 0;
 let carouselInterval; // Store the interval for the image carousel
+let isCarouselActive = true; // Track if the carousel is active
 
 // Function to start the carousel
 function startCarousel() {
-    carouselInterval = setInterval(() => {
-        imageElement.style.transition = "opacity 0.5s";  // Smooth fade transition
-        imageElement.style.opacity = 0;
+    if (isCarouselActive) {
+        carouselInterval = setInterval(() => {
+            imageElement.style.transition = "opacity 0.5s";  // Smooth fade transition
+            imageElement.style.opacity = 0;
 
-        // After fade-out, change the image source and fade back in
-        setTimeout(() => {
-            currentIndex = (currentIndex + 1) % images.length;
-            imageElement.src = images[currentIndex];
-            imageElement.style.opacity = 1;
-        }, 50);  // Wait 50ms to fade out image before switching
-    }, 1500); // Change image every 1.5 seconds
+            // After fade-out, change the image source and fade back in
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                imageElement.src = images[currentIndex];
+                imageElement.style.opacity = 1;
+            }, 50);  // Wait 50ms to fade out image before switching
+        }, 1500); // Change image every 1.5 seconds
+    }
 }
 
 // Start the carousel initially
@@ -47,6 +50,7 @@ colorCircles.forEach(circle => {
         
         // Stop the image carousel once a color is selected
         clearInterval(carouselInterval);  // Stop the carousel
+        isCarouselActive = false; // Set carousel as inactive
         imageElement.style.opacity = 1;  // Ensure the image is fully visible immediately
 
         // Update the selected circle styling
