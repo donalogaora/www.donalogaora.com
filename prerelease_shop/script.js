@@ -18,6 +18,25 @@ setInterval(() => {
     }, 50);  // Wait 5ms to fade out image before switching (was org. 500ms)
 }, 1500); // Change image every 1.5 seconds (was org. 5s)
 
+// Select the image and the color circles
+const colorCircles = document.querySelectorAll('.circle');
+const toggleImage = document.getElementById('toggle-image');
+
+// Loop through each color circle and add a click event listener
+colorCircles.forEach(circle => {
+    circle.addEventListener('click', () => {
+        // Get the data-color attribute value from the clicked circle
+        const color = circle.getAttribute('data-color');
+        
+        // Update the image source based on the color selected
+        toggleImage.src = `/assets/shop/${color}_3d_printed_phone_stand_preview.png`; // Ensure these images exist (black, white, gray, blue, red, orange)
+        
+        // Optionally, redirect to the link associated with the clicked color
+        const link = circle.getAttribute('data-link');
+        window.location.href = link; // This will redirect to the color's PayPal link
+    });
+});
+
 // Circle Hover and Selection Logic
 let selectedCircle = null;
 
