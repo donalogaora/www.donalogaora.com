@@ -367,7 +367,7 @@ colour-table {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    margin: 20px auto; /* Add spacing between cards */
+    margin: 0 auto; /* Add spacing between cards */
     position: relative;
 }
 
@@ -378,7 +378,7 @@ colour-table {
     color: #6e6d68; /* Transparent fill color */
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
     text-align: center; /* Center the text horizontally */
-    margin: 15px 0; /* Add more spacing around the title */
+    margin: 10px 0; /* Add more spacing around the title */
 }
 
 /* Shop Card Image for Second Box */
@@ -386,7 +386,6 @@ colour-table {
     width: 100%; /* Adjust image to fit card width */
     height: auto; /* Automatically adjust height based on width */
     object-fit: cover; /* Ensure proper scaling */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
 }
 
 /* Shop Card Content for Second Box */
@@ -395,7 +394,7 @@ colour-table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Add more padding for spacing */
+    padding: 15px; /* Add more padding for spacing */
     height: auto; /* Adjust content height dynamically */
 }
 
@@ -462,7 +461,7 @@ colour-table {
 }
 
 .shop-tc-text_2 {
-    font-size: 16px; /* Adjust text size */
+    font-size: 20px; /* Adjust text size */
     font-weight: bold; /* Bold text */
     color: red; /* Text color */
     text-decoration: underline; /* Add underline */
@@ -475,7 +474,7 @@ colour-table {
 
 /* Responsive adjustments for mobile screens */
 @media (max-width: 600px) {
-    .shop-card {
+    .shop-card, .shop-card_2 {
         width: 90%; /* Take up 90% width on mobile screens */
         height: auto; /* Let height adjust naturally */
     }
