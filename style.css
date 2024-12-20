@@ -314,9 +314,9 @@ colour-table {
     cursor: pointer; /* Make the cursor pointer when hovering */
 }
 
-/* On Hover */
+/* Remove the hover effect */
 .circle:hover {
-    border-color: red; /* Change border to red on hover */
+    border-color: inherit; /* No change in border color on hover */
 }
 
 /* Style the T&C text */
