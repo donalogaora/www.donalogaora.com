@@ -34,6 +34,34 @@ function startCarousel() {
 // Start the carousel initially
 startCarousel();
 
+// Define delivery and in-person links for each color
+const paymentLinks = {
+    black: {
+        delivery: "https://www.paypal.com/ncp/payment/VHL6BB6NFB5R8",
+        inperson: "https://www.paypal.com/ncp/payment/VHL6BB6NFB5R8"
+    },
+    white: {
+        delivery: "https://www.paypal.com/ncp/payment/6XWV77VL9NZXC",
+        inperson: "https://www.paypal.com/ncp/payment/6XWV77VL9NZXC"
+    },
+    space_grey: {
+        delivery: "https://www.paypal.com/ncp/payment/A7J7T4JGBRKT6",
+        inperson: "https://www.paypal.com/ncp/payment/A7J7T4JGBRKT6"
+    },
+    blue: {
+        delivery: "https://www.paypal.com/ncp/payment/433RBJJS2VRQL",
+        inperson: "https://www.paypal.com/ncp/payment/433RBJJS2VRQL"
+    },
+    red: {
+        delivery: "https://www.paypal.com/ncp/payment/NNH76WM8W9YLU",
+        inperson: "https://www.paypal.com/ncp/payment/NNH76WM8W9YLU"
+    },
+    orange: {
+        delivery: "https://www.paypal.com/ncp/payment/QXZD8DFPEL6ME",
+        inperson: "https://www.paypal.com/ncp/payment/QXZD8DFPEL6ME"
+    }
+};
+
 // Select the image and the color circles
 const colorCircles = document.querySelectorAll('.circle');
 const toggleImage = document.getElementById('toggle-image');
@@ -63,9 +91,16 @@ colorCircles.forEach(circle => {
 const orderButton = document.getElementById('shop-order-button');
 orderButton.addEventListener('click', function() {
     if (selectedColor) {
-        // If a color is selected, navigate to its data-link
-        const link = document.querySelector(`.circle[data-color="${selectedColor}"]`).getAttribute('data-link');
-        window.location.href = link; // This will redirect to the color's PayPal link
+        // Show a confirmation dialog to select delivery or in-person
+        const isDelivery = confirm("Do you want delivery? Click 'OK' for delivery, 'Cancel' for in-person.");
+
+        // Determine the appropriate link based on the user's choice
+        const link = isDelivery 
+            ? paymentLinks[selectedColor].delivery 
+            : paymentLinks[selectedColor].inperson;
+
+        // Redirect to the chosen link
+        window.location.href = link;
     } else {
         // If no color is selected, prompt the user to select one
         alert('Please select a color first!');
