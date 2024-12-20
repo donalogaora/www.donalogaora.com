@@ -399,16 +399,6 @@ colour-table {
     height: auto; /* Adjust content height dynamically */
 }
 
-/* Price and Button Container for Second Box */
-.shop-price-and-button_2 {
-    display: flex;
-    justify-content: space-between; /* Align items to the ends */
-    align-items: center; /* Center items vertically */
-    width: 100%; /* Full width of the container */
-    padding: 10px; /* Add padding for spacing */
-    gap: 15px; /* Add space between items */
-}
-
 /* Money Tag for Second Box */
 .shop-money-tag_2 {
     font-size: 20px; /* Adjusted size to 20px */
@@ -417,23 +407,6 @@ colour-table {
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
     text-transform: uppercase; /* Uppercase text */
     margin-right: 10px; /* Add spacing between price and button */
-}
-
-/* Order Button for Second Box */
-.shop-order-button_2 {
-    padding: 10px 20px; /* Adjust button padding */
-    background-color: #ffcc00; /* Button background color */
-    color: #253b80; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded button corners */
-    cursor: pointer;
-    font-size: 16px;
-    text-transform: uppercase; /* Uppercase text */
-    font-weight: bold; /* Bold text */
-}
-
-.shop-order-button_2:hover {
-    background-color: #5d5d5d; /* Button hover color */
 }
 
 /* Circle Container for Second Box */
@@ -464,18 +437,41 @@ colour-table {
     border-color: #FCBB32; /* Green border when selected */
 }
 
-/* T&C Text for Second Box */
+.shop-price-and-button_2 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center the items vertically */
+    align-items: center; /* Center the items horizontally */
+    width: 100%; /* Full width of the container */
+    gap: 10px; /* Space between the button and link */
+}
+
+.shop-order-button_2 {
+    padding: 10px 20px; /* Adjust button padding */
+    background-color: #ffcc00; /* Button background color */
+    color: #253b80; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold !important; /* Force bold text */
+}
+
+.shop-order-button_2:hover {
+    background-color: #5d5d5d; /* Button hover color */
+}
+
 .shop-tc-text_2 {
-    font-size: 18px; /* Slightly smaller size */
+    font-size: 16px; /* Adjust text size */
     font-weight: bold; /* Bold text */
-    color: red; /* Transparent fill color */
+    color: red; /* Text color */
     text-decoration: underline; /* Add underline */
-    cursor: pointer; /* Pointer cursor to indicate it's clickable */
-    padding-left: 10px; /* Add space between elements */
+    cursor: pointer; /* Pointer cursor */
 }
 
 .shop-tc-text_2:hover {
-    color: #24252b; /* Change color on hover */
+    color: #24252b; /* Color change on hover */
 }
 
 /* Responsive adjustments for mobile screens */
