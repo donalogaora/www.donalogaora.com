@@ -6,6 +6,14 @@
   <title>Auto Play Audio</title>
 </head>
 <body>
-  <audio src="/assets/xmas_ailbhe.wav" autoplay controls></audio>
+  <button id="playAudio">Play Audio</button>
+  <audio id="audioPlayer" src="/assets/xmas_ailbhe.wav"></audio>
+
+  <script>
+    document.getElementById('playAudio').addEventListener('click', () => {
+      const audio = document.getElementById('audioPlayer');
+      audio.play();
+    });
+  </script>
 </body>
 </html>
