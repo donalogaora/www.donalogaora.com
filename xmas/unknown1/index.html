@@ -21,7 +21,11 @@
         cursor: pointer;
         transition: background-color 0.3s ease, box-shadow 0.3s ease;
         display: inline-block;
-    "
+        position: absolute;
+        top: 10%; /* Adjust the top position to control vertical alignment */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Ensure perfect horizontal centering */
+          "
     onmouseover="this.style.backgroundColor='red'; this.style.color='white'; this.style.boxShadow='5px 5px 15px white';"
     onmouseout="this.style.backgroundColor='white'; this.style.color='red'; this.style.boxShadow='5px 5px 10px red';">
     find out
