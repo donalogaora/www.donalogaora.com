@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Play Audio</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<button type="button" id="audioPlayer" 
+    style="
+        padding: 15px 30px;
+        font-size: 18px;
+        font-family: 'Arial Black', sans-serif;
+        color: red;
+        background-color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px red;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        display: inline-block;
+    "
+    onmouseover="this.style.backgroundColor='red'; this.style.color='white'; this.style.boxShadow='5px 5px 15px white';"
+    onmouseout="this.style.backgroundColor='white'; this.style.color='red'; this.style.boxShadow='5px 5px 10px red';">
+    find out
+  </button>  
+  <audio id="audioPlayer" src="/assets/xmas_dara.wav"></audio>
+  <script>
+    document.getElementById('playAudio').addEventListener('click', () => {
+      const audio = document.getElementById('audioPlayer');
+      audio.play();
+    });
+  </script>
+</body>
+</html>
