@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Play Audio</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+  <titles>
+  </titles>
+  <br><br>
+  <h4>
+    Don't forgot to turn the volume up a tad.
+  </h4>
+  <br>
+  <button type="button" id="playAudio" 
+    style="
+        padding: 15px 30px;
+        font-size: 18px;
+        font-family: 'Arial Black', sans-serif;
+        color: red;
+        background-color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px red;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        display: inline-block;
+        position: absolute;
+        top: 10%; /* Adjust the top position to control vertical alignment */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Ensure perfect horizontal centering */
+          "
+    onmouseover="this.style.backgroundColor='red'; this.style.color='white'; this.style.boxShadow='5px 5px 15px white';"
+    onmouseout="this.style.backgroundColor='white'; this.style.color='red'; this.style.boxShadow='5px 5px 10px red';">
+    Find Out
+  </button>
+  <audio id="audioPlayerElement" src="/assets/xmas_dara_amanda.wav"></audio>
+  <script>
+    document.getElementById('playAudio').addEventListener('click', () => {
+      const audio = document.getElementById('audioPlayerElement');
+      audio.play();
+    });
+  </script>
+ <tandcfooter>© 2024 <span class="designer">Dónal Ó Gaora</span>. All Rights Reserved.<br>Designed by <span class="designer">Dónal Ó Gaora</span></tandcfooter>
+</body>
+</html>
