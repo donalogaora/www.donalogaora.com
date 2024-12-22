@@ -7,10 +7,13 @@
   <link href="/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  <br>
+  <br>
+  <br>
   <h4>
     I am not dog friendly, keep me away!
   </h4>
-  <br><br><br>
+  <br><br>
   <button type="button" id="playAudio" 
     style="
         padding: 15px 30px;
@@ -34,11 +37,11 @@
     onmouseout="this.style.backgroundColor='white'; this.style.color='red'; this.style.boxShadow='5px 5px 10px red';">
     Find Out
   </button>
+  <audio id="audioPlayerElement" src="/assets/xmas_ailbhe.wav"></audio>
   <br>
   <h4>
     Don't forgot to turn the volume up a tad.
   </h4>
-  <audio id="audioPlayerElement" src="/assets/xmas_ailbhe.wav"></audio>
   <script>
     document.getElementById('playAudio').addEventListener('click', () => {
       const audio = document.getElementById('audioPlayerElement');
