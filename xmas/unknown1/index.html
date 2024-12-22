@@ -7,7 +7,14 @@
   <link href="/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<button type="button" id="audioPlayer" 
+  <br>
+  <br>
+  <br>
+  <titles>
+    I am not dog friendly, keep me away!
+  </titles>
+  <br><br>
+  <button type="button" id="playAudio" 
     style="
         padding: 15px 30px;
         font-size: 18px;
@@ -28,14 +35,19 @@
           "
     onmouseover="this.style.backgroundColor='red'; this.style.color='white'; this.style.boxShadow='5px 5px 15px white';"
     onmouseout="this.style.backgroundColor='white'; this.style.color='red'; this.style.boxShadow='5px 5px 10px red';">
-    find out
-  </button>  
-  <audio id="audioPlayer" src="/assets/xmas_dara.wav"></audio>
+    Find Out
+  </button>
+  <audio id="audioPlayerElement" src="/assets/xmas_dara.wav"></audio>
+  <br>
+  <h4>
+    Don't forgot to turn the volume up a tad.
+  </h4>
   <script>
     document.getElementById('playAudio').addEventListener('click', () => {
-      const audio = document.getElementById('audioPlayer');
+      const audio = document.getElementById('audioPlayerElement');
       audio.play();
     });
   </script>
+ <tandcfooter>© 2024 <span class="designer">Dónal Ó Gaora</span>. All Rights Reserved.<br>Designed by <span class="designer">Dónal Ó Gaora</span></tandcfooter>
 </body>
 </html>
