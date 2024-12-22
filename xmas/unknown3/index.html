@@ -7,6 +7,10 @@
   <link href="/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  <h4>
+    I am not dog friendly, keep me away!
+  </h4>
+  <br><br><br>
   <button type="button" id="playAudio" 
     style="
         padding: 15px 30px;
@@ -29,7 +33,11 @@
     onmouseover="this.style.backgroundColor='red'; this.style.color='white'; this.style.boxShadow='5px 5px 15px white';"
     onmouseout="this.style.backgroundColor='white'; this.style.color='red'; this.style.boxShadow='5px 5px 10px red';">
     Find Out
-  </button>  
+  </button>
+  <br>
+  <h4>
+    Don't forgot to turn the volume up a tad.
+  </h4>
   <audio id="audioPlayerElement" src="/assets/xmas_ailbhe.wav"></audio>
   <script>
     document.getElementById('playAudio').addEventListener('click', () => {
@@ -37,5 +45,6 @@
       audio.play();
     });
   </script>
+ <tandcfooter>© 2024 <span class="designer">Dónal Ó Gaora</span>. All Rights Reserved.<br>Designed by <span class="designer">Dónal Ó Gaora</span></tandcfooter>
 </body>
 </html>
