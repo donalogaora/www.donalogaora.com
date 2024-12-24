@@ -141,17 +141,30 @@ colour-table {
   display: block;
   color: red;
   text-align: center;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* Proportional padding */
   text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px red;
+  border-radius: 0.3125rem; /* Rounded corners */
+  box-shadow: 0.3125rem 0.3125rem 0.625rem red; /* Responsive shadow */
   background-color: white;
   font-weight: bold;
-  margin: 5px;
+  margin: 0.3125rem; /* Responsive margin */
 }
-  
 .page-button {
   background-color: #C0C0C0;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-link, .page-button {
+    font-size: 0.875rem; /* Slightly smaller for tablets */
+    padding: 0.5rem 1rem; 
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-link, .page-button {
+    font-size: 0.75rem; /* Smaller for phones */
+    padding: 0.375rem 0.75rem; 
+  }
 }
 
 .designer {
