@@ -1,14 +1,15 @@
+
 // Shop Stuff
 
 // Phone Stand Image Fade
 const imageElement = document.getElementById('toggle-image');
 const images = [
-    '../assets/shop/black_3d_printed_phone_stand_preview.png',
-    '../assets/shop/white_3d_printed_phone_stand_preview.png',
-    '../assets/shop/space_grey_3d_printed_phone_stand_preview.png',
-    '../assets/shop/blue_3d_printed_phone_stand_preview.png',
-    '../assets/shop/red_3d_printed_phone_stand_preview.png',
-    '../assets/shop/orange_3d_printed_phone_stand_preview.png'
+    '../assets/shop/black_3d_printed_phone_stand_preview.jpg',
+    '../assets/shop/white_3d_printed_phone_stand_preview.jpg',
+    '../assets/shop/space_grey_3d_printed_phone_stand_preview.jpg',
+    '../assets/shop/blue_3d_printed_phone_stand_preview.jpg',
+    '../assets/shop/red_3d_printed_phone_stand_preview.jpg',
+    '../assets/shop/orange_3d_printed_phone_stand_preview.jpg'
 ];
 let currentIndex = 0;
 let carouselInterval; // Store the interval for the image carousel
@@ -74,7 +75,7 @@ colorCircles.forEach(circle => {
         selectedColor = circle.getAttribute('data-color');
         
         // Update the image source based on the color selected
-        toggleImage.src = `/assets/shop/${selectedColor}_3d_printed_phone_stand_preview.png`;  // Static color image
+        toggleImage.src = `/assets/shop/${selectedColor}_3d_printed_phone_stand_preview.jpg`;  // Static color image
         
         // Stop the image carousel once a color is selected
         clearInterval(carouselInterval);  // Stop the carousel
