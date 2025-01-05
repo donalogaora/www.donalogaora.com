@@ -313,60 +313,20 @@ colour-table {
     background-color: #5d5d5d; /* Button hover color */
 }
 
-/* Default styles for circles */
-.circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #007BFF;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    font-size: 1rem;
-}
-
-/* Container for circles */
 .circle-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between; /* Space out the circles evenly */
+    width: 100%; /* Make sure it takes the full width */
+    padding: 10px; /* Add some padding to prevent the circles from touching edges */
 }
 
-/* Responsive adjustments for mobile screens (600px and below) */
-@media (max-width: 600px) {
-    .shop-card, .shop-card_2 {
-        width: 90%;
-        height: auto; /* Let height adjust naturally */
-    }
-    .circle {
-        width: 40px;
-        height: 40px;
-        font-size: 0.8rem;
-    }
-    .circle-container {
-        justify-content: center;
-    }
-}
-
-/* Additional adjustments for very small screens (300px and below) */
-@media (max-width: 300px) {
-    .circle {
-        width: 30px;
-        height: 30px;
-        font-size: 0.6rem;
-    }
-    .circle-container {
-        justify-content: center;
-        flex-wrap: wrap; /* Ensure circles flow to new rows */
-    }
-    .shop-card, .shop-card_2 {
-        width: 100%; /* Take up full width */
-    }
-    .shop-card-title, .shop-card-title_2 {
-        font-size: 1rem; /* Smaller title font size */
-    }
+.circle {
+    width: 50px; /* Set the size of the circle */
+    height: 50px; /* Set the size of the circle */
+    border-radius: 50%; /* Make them circular */
+    border: 2px solid #24252b; /* Border for unselected circles */
+    transition: border-color 0.3s; /* Smooth transition on hover/selection */
+    cursor: pointer; /* Make the cursor pointer when hovering */
 }
 
 /* Remove the hover effect */
@@ -527,3 +487,14 @@ colour-table {
     color: #24252b; /* Color change on hover */
 }
 
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+    .shop-card, .shop-card_2 {
+        width: 90%; /* Take up 90% width on mobile screens */
+        height: auto; /* Let height adjust naturally */
+    }
+    .circle {
+        width: 40px; /* Slightly smaller circles for mobile */
+        height: 40px;
+    }
+}
