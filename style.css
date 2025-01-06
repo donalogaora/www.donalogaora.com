@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  background-image: url(assets/main_background.png);
+  background-image: url(../assets/main_background.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
