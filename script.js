@@ -61,28 +61,28 @@ const paymentLinks = {
         inperson: "https://www.paypal.com/ncp/payment/QXZD8DFPEL6ME"
     },
     meili_black: {
-        delivery: "https://www.paypal.com/ncp/payment/FX2CVP3MKK78S",
-        inperson: "https://www.paypal.com/ncp/payment/NNH76WM8W9YLU"
+        delivery: "https://www.paypal.com/ncp/payment/CQX94FPFZKPPJ",
+        inperson: "https://www.paypal.com/ncp/payment/CAQPPNUFQ52VE"
     },
     meili_white: {
-        delivery: "https://www.paypal.com/ncp/payment/FX2CVP3MKK78S",
-        inperson: "https://www.paypal.com/ncp/payment/NNH76WM8W9YLU"
+        delivery: "https://www.paypal.com/ncp/payment/2UH2UQQZLL4UQ",
+        inperson: "https://www.paypal.com/ncp/payment/4FAX3LYRKRQGU"
     },
     meili_space_grey: {
-        delivery: "https://www.paypal.com/ncp/payment/FX2CVP3MKK78S",
-        inperson: "https://www.paypal.com/ncp/payment/NNH76WM8W9YLU"
+        delivery: "https://www.paypal.com/ncp/payment/DRAWCJUAVMQL4",
+        inperson: "https://www.paypal.com/ncp/payment/3UPT8XM9XURXC"
     },
     meili_blue: {
-        delivery: "https://www.paypal.com/ncp/payment/FX2CVP3MKK78S",
-        inperson: "https://www.paypal.com/ncp/payment/NNH76WM8W9YLU"
+        delivery: "https://www.paypal.com/ncp/payment/3MFR5SLXXCTHJ",
+        inperson: "https://www.paypal.com/ncp/payment/Y7F698E9N487S"
     },
     meili_red: {
-        delivery: "https://www.paypal.com/ncp/payment/FX2CVP3MKK78S",
-        inperson: "https://www.paypal.com/ncp/payment/NNH76WM8W9YLU"
+        delivery: "https://www.paypal.com/ncp/payment/VYH6PSMP3KWSL",
+        inperson: "https://www.paypal.com/ncp/payment/YPCWVBLY7PVQ2"
     },
     meili_orange: {
-        delivery: "https://www.paypal.com/ncp/payment/FX2CVP3MKK78S",
-        inperson: "https://www.paypal.com/ncp/payment/NNH76WM8W9YLU"
+        delivery: "https://www.paypal.com/ncp/payment/MYVK7KLVW5EMQ",
+        inperson: "https://www.paypal.com/ncp/payment/BTGY96QNA4TF8"
     }
 };
 
