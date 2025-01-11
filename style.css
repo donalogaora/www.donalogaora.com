@@ -263,6 +263,15 @@ colour-table {
     margin: 10px 0; /* Space around the title */
 }
 
+.shop-card-description {
+    font-size: 18px; /* Text size */
+    font-weight: bold; /* Bold text */
+    color: #6e6d68; /* Transparent fill color */
+    -webkit-text-stroke: 1px #24252b; /* Outline effect */
+    text-align: center; /* Center the text horizontally */
+    margin: 10px 0; /* Space around the title */
+}
+
 .shop-card-image {
     width: 100%; /* Adjust image to fit card width */
     height: 30%; /* Adjust height */
