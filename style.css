@@ -60,7 +60,18 @@ tandcfooter {
   border-radius: 20px; /* Rounded corners for an oval effect */
   padding: 5px 20px; /* Adds padding around the text */
   display: inline-block; /* Ensure the background wraps only around the text */
-  white-space: nowrap; /* Prevent the text from wrapping to the next line */
+  white-space: normal; /* Allow normal wrapping inside the footer */
+}
+
+footer span.footer-text {
+  display: inline-block; /* Ensures each text section is treated separately */
+  padding: 0 10px; /* Padding to control spacing between sections */
+  margin: 0; /* Remove extra margin */
+}
+
+footer a.footer-tc-text {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Ensure the link color is inherited */
 }
 
 apaypal-form {
@@ -175,14 +186,14 @@ colour-table {
 }
 
 .designer {
-  color: red;
-  left: 50%;
-  transform: translateX(-50%);
+  color: red; /* Text color */
   background-color: #6e6d68; /* Background color */
   border-radius: 20px; /* Rounded corners for an oval effect */
   padding: 5px 20px; /* Adds padding around the text */
   display: inline-block; /* Ensure the background wraps only around the text */
   white-space: nowrap; /* Prevent the text from wrapping to the next line */
+  position: relative; /* Make sure it doesn't affect layout unexpectedly */
+  text-align: center; /* Ensure the text is centered */
 }
 
 .link-container {
@@ -366,16 +377,15 @@ colour-table {
 }
 
 .footer-tc-text {
-  color: red; /* Transparent fill color */
-  text-decoration: underline; /* Add underline */
+  color: red; /* Text color */
+  text-decoration: underline; /* Underline the text */
   cursor: pointer; /* Pointer cursor to indicate it's clickable */
-  left: 50%;
-  transform: translateX(-50%);
   background-color: #6e6d68; /* Background color */
   border-radius: 20px; /* Rounded corners for an oval effect */
   padding: 5px 20px; /* Adds padding around the text */
   display: inline-block; /* Ensure the background wraps only around the text */
   white-space: nowrap; /* Prevent the text from wrapping to the next line */
+  text-align: center; /* Center the text inside the inline-block */
 }
 
 .shop-tc-text:hover {
