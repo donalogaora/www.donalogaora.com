@@ -55,6 +55,7 @@ tandcfooter {
   position: fixed;
   bottom: 0;
   width: 100%;
+  -webkit-text-stroke: 1px #24252b; /* Outline effect */
 }
 
 apaypal-form {
@@ -170,6 +171,7 @@ colour-table {
 
 .designer {
   color: red;
+  -webkit-text-stroke: 1px #24252b; /* Outline effect */
 }
 
 .link-container {
@@ -356,6 +358,7 @@ colour-table {
     color: red; /* Transparent fill color */
     text-decoration: underline; /* Add underline */
     cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    -webkit-text-stroke: 1px #24252b; /* Outline effect */
 }
 
 .shop-tc-text:hover {
