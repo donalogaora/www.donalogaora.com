@@ -60,6 +60,7 @@ tandcfooter {
   border-radius: 20px; /* Rounded corners for an oval effect */
   padding: 5px 20px; /* Adds padding around the text */
   display: inline-block; /* Ensure the background wraps only around the text */
+  white-space: nowrap; /* Prevent the text from wrapping to the next line */
 }
 
 apaypal-form {
@@ -181,7 +182,7 @@ colour-table {
   border-radius: 20px; /* Rounded corners for an oval effect */
   padding: 5px 20px; /* Adds padding around the text */
   display: inline-block; /* Ensure the background wraps only around the text */
-}
+  white-space: nowrap; /* Prevent the text from wrapping to the next line */
 }
 
 .link-container {
@@ -365,15 +366,16 @@ colour-table {
 }
 
 .footer-tc-text {
-    color: red; /* Transparent fill color */
-    text-decoration: underline; /* Add underline */
-    cursor: pointer; /* Pointer cursor to indicate it's clickable */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #6e6d68; /* Background color */
-    border-radius: 20px; /* Rounded corners for an oval effect */
-    padding: 5px 20px; /* Adds padding around the text */
-    display: inline-block; /* Ensure the background wraps only around the text */
+  color: red; /* Transparent fill color */
+  text-decoration: underline; /* Add underline */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6e6d68; /* Background color */
+  border-radius: 20px; /* Rounded corners for an oval effect */
+  padding: 5px 20px; /* Adds padding around the text */
+  display: inline-block; /* Ensure the background wraps only around the text */
+  white-space: nowrap; /* Prevent the text from wrapping to the next line */
 }
 
 .shop-tc-text:hover {
