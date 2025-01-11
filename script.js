@@ -62,9 +62,12 @@ const paymentLinks = {
     }
 };
 
-// Select the image and the color circles
-const colorCircles = document.querySelectorAll('.circle');
+// Color selection logic
 let selectedColor = ''; // Store the selected color
+
+// Select the color circles
+const colorCircles = document.querySelectorAll('.circle');
+const toggleImage = document.getElementById('toggle-image');
 
 // Loop through each color circle and add a click event listener
 colorCircles.forEach(circle => {
@@ -73,7 +76,7 @@ colorCircles.forEach(circle => {
         selectedColor = circle.getAttribute('data-color');
         
         // Update the image source based on the color selected
-        imageElement.src = `/assets/shop/${selectedColor}_3d_printed_phone_stand_preview.jpg`;  // Static color image
+        toggleImage.src = `/assets/shop/${selectedColor}_3d_printed_phone_stand_preview.jpg`;  // Static color image
         
         // Stop the image carousel once a color is selected
         clearInterval(carouselInterval);  // Stop the carousel
@@ -83,8 +86,6 @@ colorCircles.forEach(circle => {
         // Update the selected circle styling
         colorCircles.forEach(c => c.classList.remove('selected')); // Remove "selected" class from all circles
         circle.classList.add('selected'); // Add "selected" class to the clicked circle
-
-        console.log('Color selected:', selectedColor);  // Debugging log
     });
 });
 
@@ -92,16 +93,17 @@ colorCircles.forEach(circle => {
 const orderButtons = document.querySelectorAll('.shop-order-button');
 orderButtons.forEach(orderButton => {
     orderButton.addEventListener('click', function() {
-        console.log('Order button clicked');  // Debugging log
-        
-        if (selectedColor) {
+        // Get the color associated with the button
+        const colorFromButton = orderButton.getAttribute('data-color');
+
+        if (colorFromButton) {
             // Show a confirmation dialog to select delivery or in-person
             const isDelivery = confirm("Do you want posted delivery? Click 'OK' for posted delivery, 'Cancel' for in-person delivery.");
 
             // Determine the appropriate link based on the user's choice
             const link = isDelivery 
-                ? paymentLinks[selectedColor].delivery 
-                : paymentLinks[selectedColor].inperson;
+                ? paymentLinks[colorFromButton].delivery 
+                : paymentLinks[colorFromButton].inperson;
 
             // Redirect to the chosen link
             window.location.href = link;
