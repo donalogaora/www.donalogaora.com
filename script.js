@@ -83,6 +83,8 @@ colorCircles.forEach(circle => {
         // Update the selected circle styling
         colorCircles.forEach(c => c.classList.remove('selected')); // Remove "selected" class from all circles
         circle.classList.add('selected'); // Add "selected" class to the clicked circle
+
+        console.log('Color selected:', selectedColor);  // Debugging log
     });
 });
 
@@ -90,6 +92,8 @@ colorCircles.forEach(circle => {
 const orderButtons = document.querySelectorAll('.shop-order-button');
 orderButtons.forEach(orderButton => {
     orderButton.addEventListener('click', function() {
+        console.log('Order button clicked');  // Debugging log
+        
         if (selectedColor) {
             // Show a confirmation dialog to select delivery or in-person
             const isDelivery = confirm("Do you want posted delivery? Click 'OK' for posted delivery, 'Cancel' for in-person delivery.");
