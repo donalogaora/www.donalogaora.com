@@ -39,7 +39,7 @@ const paymentLinks = {
     white: {
         delivery: "https://www.paypal.com/ncp/payment/YDUY83NNRPYZE",
         inperson: "https://www.paypal.com/ncp/payment/6XWV77VL9NZXC"
-    },
+    }
     // Add other colors as needed
 };
 
