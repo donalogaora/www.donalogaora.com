@@ -55,7 +55,9 @@ tandcfooter {
   position: fixed;
   bottom: 0;
   width: 100%;
-  -webkit-text-stroke: 1px #24252b; /* Outline effect */
+  background-color: #24252b; /* Use the outline color as the background */
+  border-radius: 20px; /* Rounded corners for an oval effect */
+  padding: 5px 20px; /* Adds padding around the text */
 }
 
 apaypal-form {
