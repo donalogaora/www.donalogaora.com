@@ -56,7 +56,7 @@ tandcfooter {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #24252b; /* Background color */
+  background-color: #6e6d68; /* Background color */
   border-radius: 20px; /* Rounded corners for an oval effect */
   padding: 5px 20px; /* Adds padding around the text */
   display: inline-block; /* Ensure the background wraps only around the text */
@@ -175,7 +175,13 @@ colour-table {
 
 .designer {
   color: red;
-  -webkit-text-stroke: 1px #24252b; /* Outline effect */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6e6d68; /* Background color */
+  border-radius: 20px; /* Rounded corners for an oval effect */
+  padding: 5px 20px; /* Adds padding around the text */
+  display: inline-block; /* Ensure the background wraps only around the text */
+}
 }
 
 .link-container {
@@ -362,7 +368,12 @@ colour-table {
     color: red; /* Transparent fill color */
     text-decoration: underline; /* Add underline */
     cursor: pointer; /* Pointer cursor to indicate it's clickable */
-    -webkit-text-stroke: 1px #24252b; /* Outline effect */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6e6d68; /* Background color */
+    border-radius: 20px; /* Rounded corners for an oval effect */
+    padding: 5px 20px; /* Adds padding around the text */
+    display: inline-block; /* Ensure the background wraps only around the text */
 }
 
 .shop-tc-text:hover {
