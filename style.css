@@ -56,22 +56,73 @@ tandcfooter {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #6e6d68; /* Background color */
+  /*background-color: #6e6d68; /* Background color */
+  background-color: #5d5d5d; /* Background color */
   border-radius: 20px; /* Rounded corners for an oval effect */
   padding: 5px 20px; /* Adds padding around the text */
   display: inline-block; /* Ensure the background wraps only around the text */
   white-space: normal; /* Allow normal wrapping inside the footer */
 }
 
-footer span.footer-text {
-  display: inline-block; /* Ensures each text section is treated separately */
-  padding: 0 10px; /* Padding to control spacing between sections */
-  margin: 0; /* Remove extra margin */
+/* Text and link styles for T&C and designer name */
+.footer-tc-text, .designer {
+  color: red; /* Text color for both */
+  background-color: #6e6d68; /* Background color */
+  border-radius: 20px; /* Rounded corners for an oval effect */
+  padding: 5px 20px; /* Adds padding around the text */
+  display: inline-block; /* Ensure the background wraps only around the text */
+  white-space: nowrap; /* Prevent the text from wrapping to the next line */
+  text-align: center; /* Center the text inside the inline-block */
+  margin: 0; /* Ensure no margin between elements */
 }
 
+/* Ensure no extra space between inline-block elements */
+footer {
+  font-size: 0; /* Eliminate gaps between inline-block elements */
+}
+
+footer .footer-text, footer .footer-tc-text, footer .designer {
+  font-size: 10px; /* Reset font size for elements to desired size */
+}
+
+/* Style the T&C link */
 footer a.footer-tc-text {
   text-decoration: none; /* Remove underline */
   color: inherit; /* Ensure the link color is inherited */
+}
+
+/* Hover effect on T&C text */
+.footer-tc-text:hover {
+  color: #24252b; /* Color change on hover */
+}
+
+/* Shop T&C Text Style */
+.shop-tc-text {
+  font-size: 20px; /* Adjusted size to 20px */
+  font-weight: bold; /* Bold text */
+  color: red; /* Transparent fill color */
+  text-decoration: underline; /* Add underline */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  padding-left: 10px; /* Space between "Order" and "T&C" */
+}
+
+/* Hover effect for Shop T&C text */
+.shop-tc-text:hover {
+  color: #24252b; /* Color change on hover */
+}
+
+/* Links style */
+.t7c-links {
+  color: red; /* Set the link text color to red */
+  text-decoration: none; /* Remove underline */
+}
+
+.t7c-links:visited {
+  color: red; /* Set visited links to red as well */
+}
+
+.t7c-links:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
 apaypal-form {
@@ -183,17 +234,6 @@ colour-table {
     font-size: 0.75rem; /* Smaller for phones */
     padding: 0.375rem 0.75rem; 
   }
-}
-
-.designer {
-  color: red; /* Text color */
-  background-color: #6e6d68; /* Background color */
-  border-radius: 20px; /* Rounded corners for an oval effect */
-  padding: 5px 20px; /* Adds padding around the text */
-  display: inline-block; /* Ensure the background wraps only around the text */
-  white-space: nowrap; /* Prevent the text from wrapping to the next line */
-  position: relative; /* Make sure it doesn't affect layout unexpectedly */
-  text-align: center; /* Ensure the text is centered */
 }
 
 .link-container {
@@ -365,45 +405,6 @@ colour-table {
 /*.circle:hover {
     border-color: inherit; /* No change in border color on hover */
 /*}
-
-/* Style the T&C text */
-.shop-tc-text {
-    font-size: 20px; /* Adjusted size to 20px */
-    font-weight: bold; /* Bold text */
-    color: red; /* Transparent fill color */
-    text-decoration: underline; /* Add underline */
-    cursor: pointer; /* Pointer cursor to indicate it's clickable */
-    padding-left: 10px; /* Space between "Order" and "T&C" */
-}
-
-.footer-tc-text {
-  color: red; /* Text color */
-  text-decoration: underline; /* Underline the text */
-  cursor: pointer; /* Pointer cursor to indicate it's clickable */
-  background-color: #6e6d68; /* Background color */
-  border-radius: 20px; /* Rounded corners for an oval effect */
-  padding: 5px 20px; /* Adds padding around the text */
-  display: inline-block; /* Ensure the background wraps only around the text */
-  white-space: nowrap; /* Prevent the text from wrapping to the next line */
-  text-align: center; /* Center the text inside the inline-block */
-}
-
-.shop-tc-text:hover {
-    color: #24252b; /* Color change on hover */
-}
-
-.t7c-links {
-    color: red; /* Set the link text color to red */
-    text-decoration: none; /* Remove underline */
-}
-
-.t7c-links:visited {
-    color: red; /* Set visited links to red as well */
-}
-
-.t7c-links:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
 
 /* On Selection */
 /*.circle.selected {
