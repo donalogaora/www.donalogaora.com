@@ -56,7 +56,7 @@ tandcfooter {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #6e6d68; /* Background color */
+  background-color: #5d5d5d; /* Background color */
   border-radius: 20px; /* Rounded corners for an oval effect */
   padding: 5px 20px; /* Adds padding around the text */
   display: inline-block; /* Ensure the background wraps only around the text */
@@ -66,13 +66,13 @@ tandcfooter {
 /* Text and link styles for T&C and designer name */
 .footer-tc-text, .designer {
   color: red; /* Text color for both */
-  border-radius: 20px; /* Rounded corners for an oval effect */
-  padding: 5px 20px; /* Adds padding around the text */
-  display: inline-block; /* Ensure the background wraps only around the text */
+  padding: 0; /* Remove padding */
+  display: inline; /* Display text inline to remove extra space */
   white-space: nowrap; /* Prevent the text from wrapping to the next line */
   text-align: center; /* Center the text inside the inline-block */
   margin: 0; /* Ensure no margin between elements */
   background-color: transparent; /* Remove the background color */
+  border-radius: 0; /* Remove rounded corners */
 }
 
 /* Ensure no extra space between inline-block elements */
