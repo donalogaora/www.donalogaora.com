@@ -54,10 +54,12 @@ tandcfooter {
   font-size: 10px;
   position: fixed;
   bottom: 0;
-  width: 100%;
-  background-color: #24252b; /* Use the outline color as the background */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #24252b; /* Background color */
   border-radius: 20px; /* Rounded corners for an oval effect */
   padding: 5px 20px; /* Adds padding around the text */
+  display: inline-block; /* Ensure the background wraps only around the text */
 }
 
 apaypal-form {
