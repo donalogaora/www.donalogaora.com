@@ -51,7 +51,9 @@ tandc-text {
   text-align: center;
   font-family: "Arial Black", sans-serif;
   font-size: 12px;
-  padding: 15px;  /* Default padding for larger screens */
+  padding: 15px;
+  max-width: 90%; /* Ensures the text doesn't span the entire width */
+  margin: 0 auto; /* Centers the text block within the container */
 }
 
 .tandc-text-bold {
@@ -59,7 +61,9 @@ tandc-text {
   text-align: center;
   font-family: "Arial Black", sans-serif;
   font-size: 12px;
-  padding: 15px;  /* Default padding for larger screens */
+  padding: 15px;
+  max-width: 90%; /* Ensures the text doesn't span the entire width */
+  margin: 0 auto; /* Centers the text block within the container */
   font-weight: bold; /* Ensures the text is bold */
 }
 
