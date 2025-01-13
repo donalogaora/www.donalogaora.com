@@ -54,7 +54,7 @@ tandc-text {
   padding: 15px;  /* Default padding for larger screens */
 }
 
-tandc-text-bold {
+.tandc-text-bold {
   color: white;
   text-align: center;
   font-family: "Arial Black", sans-serif;
