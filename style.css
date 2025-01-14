@@ -280,6 +280,7 @@ colour-table {
 /* Bio Page Stuff */
 .bio-card {
     width: 420px; /* Fixed width */
+    height: 150px; /* Fixed height for the card */
     background-color: #ffffff; /* White background */
     border-radius: 50px; /* Fully rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -291,13 +292,13 @@ colour-table {
     align-items: center; /* Vertically center the content */
     padding: 10px; /* Padding inside the card */
     gap: 10px; /* Space between the image and content */
+    box-sizing: border-box; /* Ensure padding doesn't affect size */
 }
 
 .bio-card-image {
     flex-shrink: 0; /* Prevent the image from shrinking */
-    width: 33%; /* Image takes up 1/3 of card width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 66%; /* Image height is 2/3 of the card height */
+    width: 100px; /* Fixed width for the image */
+    height: 100px; /* Fixed height for the image */
     border-radius: 50%; /* Make the image fully rounded */
     object-fit: cover; /* Ensure proper scaling */
     padding: 5px; /* Padding around the image */
@@ -312,10 +313,11 @@ colour-table {
     align-items: flex-start; /* Align text to the left */
     padding: 10px; /* Inner padding for the content */
     flex: 1; /* Let the content take the remaining space */
+    overflow: hidden; /* Prevent content overflow */
 }
 
 .bio-card-title {
-    font-size: 24px; /* Text size */
+    font-size: 20px; /* Text size */
     font-weight: bold; /* Bold text */
     color: #6e6d68; /* Text color */
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
@@ -324,10 +326,11 @@ colour-table {
 }
 
 .bio-card-description {
-    font-size: 18px; /* Text size */
+    font-size: 14px; /* Text size */
     color: #6e6d68; /* Text color */
     text-align: left; /* Align text to the left */
     margin: 0; /* No margin for better alignment */
+    margin-top: 5px; /* Add slight space below the title */
 }
 
 /* Responsive adjustments for mobile screens */
@@ -341,8 +344,8 @@ colour-table {
     }
 
     .bio-card-image {
-        width: 40%; /* Image takes up 40% of the card width on mobile */
-        max-height: 80%; /* Max height for the image on mobile */
+        width: 80px; /* Smaller image on mobile */
+        height: 80px;
         margin-bottom: 0; /* No extra space below the image */
     }
 
