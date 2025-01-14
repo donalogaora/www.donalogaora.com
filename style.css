@@ -290,12 +290,14 @@ colour-table {
     position: relative;
     align-items: center; /* Vertically center the content */
     padding: 10px; /* Padding inside the card */
-    gap: 5px; /* Space between the image and content */
+    gap: 10px; /* Space between the image and content */
 }
 
 .bio-card-image {
-    width: 120px; /* Adjust the image width */
-    height: 120px; /* Adjust the image height */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 33%; /* Image takes up 1/3 of card width by default */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 66%; /* Image height is 2/3 of the card height */
     border-radius: 50%; /* Make the image fully rounded */
     object-fit: cover; /* Ensure proper scaling */
     padding: 5px; /* Padding around the image */
@@ -306,8 +308,8 @@ colour-table {
 .bio-card-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center; /* Center content vertically */
+    align-items: flex-start; /* Align text to the left */
     padding: 10px; /* Inner padding for the content */
     flex: 1; /* Let the content take the remaining space */
 }
@@ -315,10 +317,10 @@ colour-table {
 .bio-card-title {
     font-size: 24px; /* Text size */
     font-weight: bold; /* Bold text */
-    color: #6e6d68; /* Transparent fill color */
+    color: #6e6d68; /* Text color */
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
     text-align: left; /* Align text to the left */
-    margin-bottom: 5px; /* Space below the title */
+    margin: 0; /* No margin to align with description */
 }
 
 .bio-card-description {
@@ -339,8 +341,8 @@ colour-table {
     }
 
     .bio-card-image {
-        width: 80px; /* Smaller image on mobile */
-        height: 80px;
+        width: 80%; /* Image takes up 4/5 of the card width on mobile */
+        max-height: 80%; /* Max height for the image on mobile */
         margin-bottom: 10px; /* Add space below the image */
     }
 
