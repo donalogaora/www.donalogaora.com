@@ -278,7 +278,82 @@ colour-table {
 }
 
 /* Bio Page Stuff */
+.bio-card {
+    width: 420px; /* Fixed width */
+    background-color: #ffffff; /* White background */
+    border-radius: 50px; /* Fully rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    margin: 0 auto; /* Center the card horizontally */
+    position: relative;
+    align-items: center; /* Vertically center the content */
+    padding: 10px; /* Padding inside the card */
+    gap: 5px; /* Space between the image and content */
+}
 
+.bio-card-image {
+    width: 120px; /* Adjust the image width */
+    height: 120px; /* Adjust the image height */
+    border-radius: 50%; /* Make the image fully rounded */
+    object-fit: cover; /* Ensure proper scaling */
+    padding: 5px; /* Padding around the image */
+    background-color: #f0f0f0; /* Optional: Background around the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+}
+
+.bio-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px; /* Inner padding for the content */
+    flex: 1; /* Let the content take the remaining space */
+}
+
+.bio-card-title {
+    font-size: 24px; /* Text size */
+    font-weight: bold; /* Bold text */
+    color: #6e6d68; /* Transparent fill color */
+    -webkit-text-stroke: 1px #24252b; /* Outline effect */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 5px; /* Space below the title */
+}
+
+.bio-card-description {
+    font-size: 18px; /* Text size */
+    color: #6e6d68; /* Text color */
+    text-align: left; /* Align text to the left */
+    margin: 0; /* No margin for better alignment */
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+    .bio-card {
+        width: 90%; /* Take up 90% width on mobile screens */
+        height: auto; /* Let height adjust naturally */
+        flex-direction: column; /* Stack image and content vertically */
+        align-items: center; /* Center items on mobile */
+        padding: 15px;
+    }
+
+    .bio-card-image {
+        width: 80px; /* Smaller image on mobile */
+        height: 80px;
+        margin-bottom: 10px; /* Add space below the image */
+    }
+
+    .bio-card-content {
+        align-items: center; /* Center align content on mobile */
+        text-align: center; /* Center text alignment */
+    }
+
+    .bio-card-title,
+    .bio-card-description {
+        text-align: center; /* Center text on mobile */
+    }
+}
 
 /* Shop Stuff */
 .shop-card {
