@@ -304,6 +304,7 @@ colour-table {
     padding: 5px; /* Padding around the image */
     background-color: #f0f0f0; /* Optional: Background around the image */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+    text-decoration: none;
 }
 
 .bio-card-content {
@@ -323,14 +324,16 @@ colour-table {
     -webkit-text-stroke: 1px #24252b; /* Outline effect */
     text-align: left; /* Align text to the left */
     margin: 0; /* No margin to align with description */
+    text-decoration: none;
 }
 
 .bio-card-description {
     font-size: 14px; /* Text size */
-    color: #6e6d68; /* Text color */
+    color: red;
     text-align: left; /* Align text to the left */
     margin: 0; /* No margin for better alignment */
     margin-top: 5px; /* Add slight space below the title */
+    text-decoration: none;
 }
 
 /* Responsive adjustments for mobile screens */
