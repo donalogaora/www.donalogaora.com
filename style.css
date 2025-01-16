@@ -304,7 +304,6 @@ colour-table {
     padding: 5px; /* Padding around the image */
     background-color: #f0f0f0; /* Optional: Background around the image */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
-    text-decoration: none;
 }
 
 .bio-card-content {
