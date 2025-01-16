@@ -279,8 +279,8 @@ colour-table {
 
 /* Bio Page Stuff */
 .bio-card {
-    width: 420px; /* Fixed width */
-    height: 150px; /* Fixed height for the card */
+    width: 400px; /* Fixed width */
+    height: 120px; /* Fixed height for the card */
     background-color: #ffffff; /* White background */
     border-radius: 50px; /* Fully rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
