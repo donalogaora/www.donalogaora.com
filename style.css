@@ -103,6 +103,10 @@ tandcfooter {
   background-color: transparent; /* Remove the background color */
 }
 
+.designer {
+  text-decoration: none;
+}
+
 /* Ensure no extra space between inline-block elements */
 footer {
   font-size: 0; /* Eliminate gaps between inline-block elements */
