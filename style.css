@@ -218,10 +218,23 @@ colour-table {
 }
 
 /* Clearfix */
-.clearfix::after {
+/*.clearfix::after {
   content: "";
   clear: both;
   display: table;
+}*/
+
+/* Updated Clearfix - Now Sticky */
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+  position: sticky; /* Makes navbar stick to the top */
+  top: 0; /* Stays at the very top */
+  background: white; /* Ensures it's visible */
+  z-index: 1000; /* Keeps it above other elements */
+  padding: 10px 0; /* Adds some spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
 }
 
 .nav-list {
