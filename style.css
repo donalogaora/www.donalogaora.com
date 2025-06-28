@@ -263,7 +263,8 @@ colour-table {
 }
 
 .page-button {
-  background-color: #C0C0C0;
+  background-color: #5d5d5d;
+  color: #ffffff;
 }
 
 .nav-link:hover {
