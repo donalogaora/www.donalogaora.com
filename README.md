@@ -13,5 +13,12 @@ This repository hosts the main site landing page, along with general housekeepin
 
 ---
 
+### 🌍 Related Sites
+This repository supports and relates to other projects under the domain, including:
+- **bio.donalogaora.com**
+- **shop.donalogaora.com**
+
+---
+
 ### 👤 Ownership & Maintenance
 This repository, and all related `*.donalogaora.com` repositories, are owned and maintained by **Dónal Ó Gaora**.
