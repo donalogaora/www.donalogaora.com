@@ -1,3 +1,14 @@
+/* ===============================
+   ROOT
+   =============================== */
+:root {
+  --footer-gap: 5px;
+  --footer-height: 52px; /* adjust if footer text wraps */
+}
+
+/* ===============================
+   MAIN
+   =============================== */
 html {
 	height: -webkit-fill-available;
 }
@@ -84,6 +95,33 @@ html, body {
 }
 
 /* ===============================
+   FOOTER
+   =============================== */
+.footer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(var(--footer-gap) + env(safe-area-inset-bottom));
+  background-color: #333333;
+  border-radius: 20px;
+  padding: 5px 20px;
+  white-space: nowrap;
+  max-width: 90%;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  z-index: 1000;
+}
+
+.footer-spacer {
+  height: calc(
+    52px + 
+    5px + 
+    env(safe-area-inset-bottom)
+  );
+}
+
+/* ===============================
    TEXT
    =============================== */
 /*Page Header*/
@@ -161,96 +199,4 @@ html, body {
 
 .text-6-1:hover {
   text-decoration: underline;
-}
-
-/* ===============================
-   FOOTER
-   =============================== */
-.footer {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: calc(var(--footer-gap) + env(safe-area-inset-bottom));
-  background-color: #333333;
-  border-radius: 20px;
-  padding: 5px 20px;
-  white-space: nowrap;
-  max-width: 90%;
-  box-sizing: border-box;
-  text-align: center;
-  color: white;
-  z-index: 1000;
-}
-
-.footer-spacer {
-  height: calc(
-    52px + 
-    5px + 
-    env(safe-area-inset-bottom)
-  );
-}
-
-/* ===============================
-   BIO CARD
-   =============================== */
-.bio-card {
-    width: 400px; /* Fixed width */
-    height: 120px; /* Fixed height for the card */
-    background-color: #ffffff; /* White background */
-    border-radius: 50px; /* Fully rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    overflow: hidden;
-    display: flex;
-    flex-direction: row; /* Arrange items in a row */
-    margin: 0 auto; /* Center the card horizontally */
-    position: relative;
-    align-items: center; /* Vertically center the content */
-    padding: 10px; /* Padding inside the card */
-    gap: 10px; /* Space between the image and content */
-    box-sizing: border-box; /* Ensure padding doesn't affect size */
-}
-
-.bio-card-image {
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    width: 100px; /* Fixed width for the image */
-    height: 100px; /* Fixed height for the image */
-    border-radius: 50%; /* Make the image fully rounded */
-    object-fit: cover; /* Ensure proper scaling */
-    padding: 5px; /* Padding around the image */
-    background-color: #f0f0f0; /* Optional: Background around the image */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
-}
-
-.bio-card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: flex-start; /* Align text to the left */
-    padding: 10px; /* Inner padding for the content */
-    flex: 1; /* Let the content take the remaining space */
-    overflow: hidden; /* Prevent content overflow */
-}
-
-.bio-card-title {
-    font-size: 20px; /* Text size */
-    font-weight: bold; /* Bold text */
-    color: #6e6d68; /* Text color */
-    -webkit-text-stroke: 1px #24252b; /* Outline effect */
-    text-align: left; /* Align text to the left */
-    margin: 0; /* No margin to align with description */
-    text-decoration: none;
-}
-
-.bio-card-description {
-    font-size: 14px; /* Text size */
-    color: #FF0000;
-    text-align: left; /* Align text to the left */
-    margin: 0; /* No margin for better alignment */
-    margin-top: 5px; /* Add slight space below the title */
-    text-decoration: none;
-}
-
-:root {
-  --footer-gap: 5px;
-  --footer-height: 52px; /* adjust if footer text wraps */
 }
