@@ -67,7 +67,7 @@ html, body {
 }
 
 .page-current:hover {
-	box-shadow: 6px 5px 3px #ffffff;
+	box-shadow: 6px 5px 3px #ff0000;
 }
 
 .page-other {
