@@ -94,6 +94,12 @@ html, body {
 	margin: 0.3125rem; /* Responsive margin */
 }
 
+@media (max-width: 420px) {
+  .page-current, .page-other {
+    font-size: 12px;
+  }
+}
+
 /* ===============================
    FOOTER
    =============================== */
@@ -199,4 +205,10 @@ html, body {
 
 .text-6-1:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 420px) {
+  .text-2 {
+    font-size: 21px;
+  }
 }
