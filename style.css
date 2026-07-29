@@ -224,6 +224,30 @@ html, body {
   }
 }
 
+/* ===============================
+   DONALOGAORA.COM
+   =============================== */
+.other-button {
+	background-color: #ffffff;
+	color: #ff0000;
+	font-family: "Arial Black", sans-serif;
+	font-size: 18px;
+	border-radius: 10px;
+	padding: 0.625rem 1.25rem;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 6px 5px 3px #ff0000;
+	font-weight: bold;
+	margin: 0.3125rem;
+}
+
+.other-button:hover {
+	background-color: #ff0000;
+	color: #ffffff;
+	box-shadow: 6px 5px 3px #ffffff;
+}
+
 .secret-message {
     color: #FF0000;
     cursor: pointer;
@@ -245,3 +269,5 @@ html, body {
 .secret-message.decoded:hover {
     color: #FF0000;
 }
+
+text-align: right;
