@@ -173,6 +173,27 @@ html, body {
     text-decoration: none;
 }
 
+/*Bulk Text*/
+.text-4-1 {
+	color: white;
+	text-align: center;
+	font-family: "Arial Black", sans-serif;
+	font-size: 17.5px;
+}
+
+.text-4-2 {
+	color: #FF0000;
+	text-decoration: none;
+}
+
+.text-4-2:visited {
+	color: #FF0000;
+}
+
+.text-4-2:hover {
+	text-decoration: underline;
+}
+
 /*Main Text*/
 .text-5 {
 	color: white;
@@ -213,12 +234,12 @@ html, body {
 }
 
 .text-block {
-	width: 450px;
+	width: 480px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   .text-block {
     width: 320px;
   }
@@ -254,7 +275,6 @@ html, body {
     user-select: none;
     transition: color 0.25s ease, opacity 0.25s ease;
 	font-family: "Arial Black", sans-serif;
-	font-size: 14px;
 }
 
 .secret-message:hover {
@@ -269,5 +289,3 @@ html, body {
 .secret-message.decoded:hover {
     color: #FF0000;
 }
-
-text-align: right;
