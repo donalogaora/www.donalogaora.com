@@ -289,3 +289,12 @@ html, body {
 .secret-message.decoded:hover {
     color: #FF0000;
 }
+
+.linkedin-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.linkedin-section .text-4-1 {
+    margin: 0 15px 15px;
+}
